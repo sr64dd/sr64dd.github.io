@@ -1,25 +1,54 @@
 @font-face {
-    font-family: helvTarg;
-    src: url('fonts/HelveticaforTarget.ttf');
+    font-family: helvNeue;
+    src: url('fonts/HelveticaNeueLight.otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: helvTarg;
-    src: url('fonts/HelveticaforTarget-Bold.ttf');
+    font-family: helvNeue;
+    src: url('fonts/HelveticaNeueMedium.otf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: nokMarquee;
+    font-family: devinChavez;
     src: url('fonts/devin-chavez-font.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    border-style: solid;
+    border-color: transparent ;
+    background-clip: padding-box;
+    border-width: 10px; 
+    border-image-source: url('scrollbar/scrollthumbtrack.webp');
+    border-image-slice: 8 fill; 
+    border-image-repeat: stretch; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-color: transparent ;
+    background-clip: padding-box;
+    border-width: 10px; 
+    border-image-source: url('scrollbar/scrollthumb.webp');
+    border-image-slice: 8 fill; 
+    border-image-repeat: stretch; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-image-source: url('scrollbar/scrollthumbhover.webp');
 }
 
 body {
@@ -30,7 +59,9 @@ body {
     background-image: url(backgrounds/bgtest.webp);
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 8px #000000;
-    font-family: helvTarg;
+    font-family: helvNeue;
+    font-weight:350;
+    letter-spacing: 1px;
 }
 
 p {
@@ -40,6 +71,30 @@ p {
 .page {
     padding-top: 60px;
     display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.texta:link {
+    color: rgb(180, 180, 255);
+}
+
+.artist:link {
+    color: rgb(255, 251, 196);
+}
+
+.texta:visited {
+    color: rgb(179, 223, 130);
+}
+
+.texta:hover {
+    color: rgb(96, 96, 197);
+}
+
+.texta:active {
+    color: rgb(120, 69, 153);
 }
 
 /* Left side */
@@ -62,42 +117,39 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;  
-    font-family: helvTarg;
+    font-family: helvNeue;
     text-shadow: 2px 2px 8px #000000;
     font-size: 18px;
     color: white;
     padding-bottom: 3px;
     background-repeat: no-repeat;
     filter: drop-shadow(2px 2px 8px black);
+    font-weight: normal;
 }
 
 .spec {
-   background-image: url(interactive/linkheader.webp); 
-   width: 270px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    font-family: helvTarg;
-    text-shadow: 2px 2px 8px #000000;
-    font-size: 18px;
-    color: rgb(192, 218, 221);
-    padding-bottom: 3px;
-    background-repeat: no-repeat;
-    filter: drop-shadow(2px 2px 8px black);
+    background-image: url(interactive/linkctc.webp); 
+    color: rgb(221, 205, 192);
 }
 
-.linkbutton:hover {
+.sr64ddlink {
+    background-image: url(interactive/linkheader.webp); 
+    color: rgb(221, 245, 255);
+}
+
+
+.credbutton {
+    background-image: url(interactive/linkcredit.webp); 
+    color: rgb(221, 245, 255);
+}
+
+.linkbuttona:hover {
     color: grey;
 }
 
-.linkbutton:active {
+.linkbuttona:active {
     background-image: url(interactive/linkpressed.webp);
     color: white;
-}
-
-a {
-    text-decoration: none;
 }
 
 /* Right side */
@@ -118,9 +170,14 @@ a {
     color: rgb(194, 36, 36);
     overflow: hidden ;
     white-space: nowrap ;
-    font-family: nokMarquee;
+    font-family: devinChavez;
     font-size: 12px;
     text-shadow: 0px 0px 8px #ff0000;
+}
+
+.marqalt {
+    border-image: url(backgrounds/bordertest4alt.webp) 16;
+    background-image: url(backgrounds/marqueealt.webp);
 }
 
 .marquee__item {
@@ -148,5 +205,10 @@ a {
     padding: 12px;
     background-image: url(backgrounds/bodybg.webp);
     border-radius: 16px;
+}
+
+.contentalt {
+    border-image: url(backgrounds/bordertest3alt.webp) 16;
+    background-image: url(backgrounds/bodybgalt.webp);
 }
 
