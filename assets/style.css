@@ -56,7 +56,6 @@ body {
     justify-content: center;
     align-items: center;  
     background-color: #000000;
-    background-image: url(backgrounds/bgtest.webp);
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 8px #000000;
     font-family: helvNeue;
@@ -180,6 +179,25 @@ a {
     background-image: url(backgrounds/marqueealt.webp);
 }
 
+.marqabout {
+    border-image: url(backgrounds/border4about.webp) 16;
+    background-image: url(backgrounds/marqueeabout.webp);
+}
+
+.marqlink {
+    border-image: url(backgrounds/bordertest4link.webp) 16;
+    background-image: url(backgrounds/marqueelink.webp);
+    color: rgb(194, 152, 36);
+    text-shadow: 0px 0px 8px #ffae00;
+}
+
+.marqxxx {
+    border-image: url(backgrounds/border4xxx.webp) 16;
+    background-image: url(backgrounds/marqueexxx.webp);
+    color: rgb(36, 194, 83);
+    text-shadow: 0px 0px 8px #00ff4c;
+}
+
 .marquee__item {
 	animation-duration: 12s ;
 	animation-name: marquee-content ;
@@ -212,3 +230,17 @@ a {
     background-image: url(backgrounds/bodybgalt.webp);
 }
 
+.contentlink {
+    border-image: url(backgrounds/bordertest3link.webp) 16;
+    background-image: url(backgrounds/bodybglink.webp);
+}
+
+.contentabout {
+    border-image: url(backgrounds/border3about.webp) 16;
+    background-image: url(backgrounds/bodybgabout.webp);
+}
+
+.contentxxx {
+    border-image: url(backgrounds/border3xxx.webp) 16;
+    background-image: url(backgrounds/bodybgxxx.webp);
+}

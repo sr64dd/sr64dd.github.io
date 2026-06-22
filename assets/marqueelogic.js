@@ -20,7 +20,9 @@ function startMarquee() {
         "Look at that! Now I'm blue!",
         'Are you a "the odds are 50/50 either way" person or a "the odds become 2/3 if you switch" person?',
         "√ If you're looking for the life that's in you (whatchu do?) And you tryna figure how you gon' do. Let the Guiding Lights take ya. √",
-        "Sweet mother of pearl. Some people, I tell ya, some people..."
+        "Sweet mother of pearl. Some people, I tell ya, some people...",
+        'I believe "ai art" is art if the "t" is stupid, "i" is yes, "r" is are, and "a" is you.',
+        "Don't go looking at the github repository! It'll ruin the magic!"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {
