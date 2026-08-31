@@ -22,7 +22,27 @@ function startMarquee() {
         "√ If you're looking for the life that's in you (whatchu do?) And you tryna figure how you gon' do. Let the Guiding Lights take ya. √",
         "Sweet mother of pearl. Some people, I tell ya, some people...",
         'I believe "ai art" is art if the "t" is stupid, "i" is yes, "r" is are, and "a" is you.',
-        "Don't go looking at the github repository! It'll ruin the magic!"
+        "Don't go looking at the github repository! It'll ruin the magic!",
+        "TEST TEST... ABDC., () xxx has Released! 0123ABDC., () xxx has Released! 0123... TEST OVER",
+        "What's the derivative of 64/3 * d^3?",
+        "Guys, I have a confession... none of my renders were made in Bryce... I use UE5 for all of my works... please forgive me.",
+        "Bag some goodies! Bag them! NOW!",
+        "Listen to me carefully. You and only you can see this marquee. A very special item is located in Hilbert's Leisure Centre. Pool 64. Meet me there.",
+        "3D Rendered marble vaporave knight to d64...",
+        "CONGRATS!!!! You are visitor [64 DD] and have won a complimentary 500 MATERIALS for Bryce! Send over your details to redeem your prize!",
+        "VIRUS DETECTED! VIRUS DETECTED! EVACUATE!",
+        ";====_+==}=]|s$$NM!L++++===-=----==",
+        "=[=======-- En guarde!",
+        "Little steps lead to big change or something idk.",
+        "Software reveal at 100K Followers!",
+        "If your arm got cut off, would it hurt? Keep in mind, the nerves are cut off with it, and also in this scenario size does affect the pain. Also, Pinocchio's nose will not shrink back if he tells the truth. Additionally, the cut is instantaneous and performed via laser. And if you still can't reach a consensus, remember that chickens have been able to survive for a few minutes after their heads have been cut off. Take your time to think of an answer.",
+        "What -core is this website?",
+        "This site's a whole lotta nothing, huh?",
+        "Always remember any texture can be a good cloud!",
+        "My favourite colour is #3b5c0c",
+        "For the longest time, the human character with brown hair and grey shirt had no name. How odd to me and me only...",
+        "This marquee has been subtle foreshadowing for something huge.",
+        "I hope you're having a splendid day."
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {

@@ -198,6 +198,27 @@ a {
     text-shadow: 0px 0px 8px #00ff4c;
 }
 
+.marqstuff {
+    border-image: url(backgrounds/border4stuff.webp) 16;
+    background-image: url(backgrounds/marqueestuff.webp);
+    color: rgb(216, 255, 200);
+    text-shadow: 0px 0px 8px #001402;
+}
+
+.marqanim {
+    border-image: url(backgrounds/border4anim.webp) 16;
+    background-image: url(backgrounds/marqueeanim.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #0011ff;
+}
+
+.marqgall {
+    border-image: url(backgrounds/border4gall.webp) 16;
+    background-image: url(backgrounds/marqueegall.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #ff8800;
+}
+
 .marquee__item {
 	animation-duration: 12s ;
 	animation-name: marquee-content ;
@@ -243,4 +264,19 @@ a {
 .contentxxx {
     border-image: url(backgrounds/border3xxx.webp) 16;
     background-image: url(backgrounds/bodybgxxx.webp);
+}
+
+.contentstuff {
+    border-image: url(backgrounds/border3stuff.webp) 16;
+    background-image: url(backgrounds/bodybgstuff.webp);
+}
+
+.contentanim {
+    border-image: url(backgrounds/border3anim.webp) 16;
+    background-image: url(backgrounds/bodybganim.webp);
+}
+
+.contentgall {
+    border-image: url(backgrounds/border3gall.webp) 16;
+    background-image: url(backgrounds/bodybggall.webp);
 }
