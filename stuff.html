@@ -3,61 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/altpagestyles.css">
     <title>Other Stuff - sr64dd</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 
     <style>
         body {
             background-image: url(assets/backgrounds/bgstuff.webp);
-        }
-
-        #tooltip {
-            position: fixed;
-            background-image: linear-gradient(#5e44f1,#2400f1,#2400f1,#17009b);
-            border: 2px solid rgb(255, 255, 255);
-            padding: 10px;
-            width: 250px;
-            display: none;
-            align-items: flex-start;
-            gap: 10px;
-            pointer-events: none;
-            z-index: 1000;
-            font-size: 12px;
-        }
-
-        #tooltip img {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-
-        #tooltip div {
-            flex: 1;
-            min-width: 0;
-        }
-
-        #tooltip p {
-            padding-top: 15px;
-            margin: 5px 0 0;
-            line-height: 1.3;
-        }
-
-        #tooltip::after {
-            content: "";
-            position: absolute;
-
-            width: 180px;
-            height: 60px;
-
-            top: -30px;
-            right: -30px;
-
-            background-image: url("assets/backgrounds/tooltipborder.webp");
-            background-size: contain;
-            background-repeat: no-repeat;
-
-            pointer-events: none;
         }
     </style>
 </head>
@@ -86,113 +38,33 @@
                 </div>
             </div>
             <div id="content" class="content contentstuff">
-                <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Goodies</b></div>
-                <div>Here's a collection of a few custom made materials and skies for Bryce 3D, as well as modifications to existing materials. I've used a lot of these in renders of my own. There's a good handful in here with a lot of variance. In here is also a few other collections of stuff.</div>
+                <div style="font-size: 24px; padding-top: 10px;"><b>Other Stuff</b></div>
+                <div>What are you interested in today?</div>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/SR64DD.s.Materials.and.Skies.zip" class="texta artist tooltip-link" data-description="The OG collection of Bryce goodies. Complete with 50 materials and 32 skies! A value pack you will find nowhere else..."><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/materialsicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">SR64DD's <b>Materials and Skies for Bryce</b>
-                    <p style="font-size: 12px;">14.3 MB - Click here to download (MAT, SKY)</p></div>
+                <br><a href="brycestuff.html" class="texta section tooltip-link" ><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/brycelogo.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Goodies</b>
+                    <p style="font-size: 12px;">Collections filled with presets for Bryce 3D. </p></div>
                 </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Cruising.the.Canyon.Rigs.and.Lens.zip" class="texta artist tooltip-link" data-description="A small collection of the rigs featured in Cruising the Canyon and a premade fish-eye lens. How convenient!"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/ctclogo1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">Cruising the Canyon <b>Rig Examples and Lens</b>
-                    <p style="font-size: 12px;">24.5 MB - Click here to download (BR7, OBJ)</p></div>
+                <br><a class="dead tooltip-link" ><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/gamespage.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>Web Games</b>
+                    <p style="font-size: 12px;">Shoddy little games made just for this website. Exclusive, I know.</p></div>
                 </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/A.Couple.Couple.Textures.zip" class="texta artist tooltip-link" data-description="A collection with a handful of textures and skies that use those textures for their clouds. It ain't much but it's pretty. What more could you ask for?"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/texturesicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">A Couple Couple <b>Textures and Skies</b>
-                    <p style="font-size: 12px;">436 KB - Click here to download (TEX, SKY)</p></div>
+                <br><a href="3dsthemes.html" class="texta section tooltip-link" ><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/3dspage.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>3DS Themes</b>
+                    <p style="font-size: 12px;">Cool themes for your Nintendo 3DS... if you still use it...</p></div>
                 </div></a>
-
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Random.Skies.bsk" class="texta artist tooltip-link" data-description="35 Bryce sky presets all made using clouds that were randomly generated in the deep texture editor. Some of these are very broad and suitable for generic day scenes. Others are really specific and probably aren't applicable to all renders. Still, they're pretty neat, so why not try them out?"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/randomskyicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Skies</b> made from Random Textures
-                    <p style="font-size: 12px;">1.72 MB - Click here to download (SKY)</p></div>
-                </div></a>
-
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/More.Atmospheres.mat" class="texta artist tooltip-link" data-description="A collection of 31 Surface and 20 Volume atmospheric materials, plus a couple of alterations on those. I don't really know how practical a lot of them will be but most of them are really solid and almost all of them are adjacent to the pre-existing atmospheric materials."><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/moreatmosicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">More <b>Atmospheric Materials</b>
-                    <p style="font-size: 12px;">1.44 MB - Click here to download (MAT)</p></div>
-                </div></a>
-
-                <br><div>I don't need you to credit me if you make a render that uses these. Consider these "on the house" ;)</div><br>
-                <a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/supersecret64.obp"><div class="logo"><video autoplay loop muted playsinline>
-                        <source src="assets/images/walkingpix.webm" type="video/webm">      
-                </video>
-                </div></a>
-                <div class="logo">More goodies are on their way!</div>
-
-                <br><div style="font-size: 24px; padding-top: 10px;"><b>3DS Custom Themes</b></div>
-                <div>A while back I made a few 3DS themes based on things I like (well, pretty much just songs). They're kinda crappy but also cool and I might make more in the future, so why not share them too?</div>
-                
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/It.s.a.Mistake.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="It's a Mistake (Men at Work)" data-image="assets/icons/3ds/iampreview.webp"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/iam3dsicon.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><b>It's A Mistake</b> 3DS Theme
-                    <p style="font-size: 12px;">2.47 MB - Click here to download</p></div>
-                </div></a>
-
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/Travelling.Without.Moving.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="Travelling Without Moving (Jamiroquai)" data-image="assets/icons/3ds/twmpreview.webp"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/twm3dsicon.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><b>Travelling Without Moving</b> 3DS Theme
-                    <p style="font-size: 12px;">2.67 MB - Click here to download</p></div>
-                </div></a>
-
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/Guiding.Lights.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="Guiding Lights (Earth, Wind & Fire)" data-image="assets/icons/3ds/glpreview.webp"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/gl3dsicon.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><b>Guiding Lights</b> 3DS Theme
-                    <p style="font-size: 12px;">2.81 MB - Click here to download</p></div>
-                </div></a>
-
-                <br>To install the themes, use <a href="https://wiki.hacks.guide/wiki/3DS:Custom_themes" class="texta tooltip-link">this guide.</a>
-            </div>
+                <br><br><br><br><br><br><br>Please feel free to waste your time on my website goodies! (Quality may vary extremely)
         </main>
-    </div>
-
-    <div id="tooltip">
-        <img id="tooltip-image" src="" alt="">
-        <div>
-            <p id="tooltip-description"></p>
-        </div>
     </div>
 </body>
 <script>
     var safeMarquee = false
-
-    const tooltip = document.getElementById("tooltip");
-    const tooltipImage = document.getElementById("tooltip-image");
-    const tooltipDescription = document.getElementById("tooltip-description");
-
-    document.querySelectorAll(".tooltip-link").forEach(link => {
-
-        link.addEventListener("mouseenter", () => {
-            tooltipDescription.textContent = link.dataset.description;
-
-            if (link.dataset.image) {
-                tooltipImage.src = link.dataset.image;
-                tooltipImage.style.display = "flex";
-            } else {
-                tooltipImage.style.display = "none";
-            }
-
-            tooltip.style.display = "flex";
-        });
-
-        link.addEventListener("mousemove", event => {
-            tooltip.style.left = (event.clientX + 15) + "px";
-            tooltip.style.top = (event.clientY + 15) + "px";
-        });
-
-        link.addEventListener("mouseleave", () => {
-            tooltip.style.display = "none";
-        });
-
-    });
 </script>
 <script src="assets/marqueelogic.js"></script>
 
 </html>
-

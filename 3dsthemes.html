@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/altpagestyles.css">
+    <title>3DS Themes - sr64dd</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <style>
+        body {
+            background-image: linear-gradient(black,black,black,rgb(0, 0, 173),rgb(98, 0, 255));
+            background-attachment: fixed;
+        }
+
+        #tooltip {
+            position: fixed;
+            background-image: linear-gradient(#5e44f1,#2400f1,#2400f1,#17009b);
+            border: 2px solid rgb(255, 255, 255);
+            padding: 10px;
+            width: 250px;
+            display: none;
+            align-items: flex-start;
+            gap: 10px;
+            pointer-events: none;
+            z-index: 1000;
+            font-size: 12px;
+        }
+
+        #tooltip img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        #tooltip div {
+            flex: 1;
+            min-width: 0;
+        }
+
+        #tooltip p {
+            padding-top: 15px;
+            margin: 5px 0 0;
+            line-height: 1.3;
+        }
+
+        #tooltip::after {
+            content: "";
+            position: absolute;
+
+            width: 180px;
+            height: 60px;
+
+            top: -30px;
+            right: -30px;
+
+            background-image: url("assets/backgrounds/tooltipborder3ds.webp");
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <div id="leftside">
+            <div id="logo" class="logo">
+                <img src="assets/images/sr64decal.webp" width="240px" height="240px" draggable="false">
+            </div>
+            <aside id="sidebar" class="sidebar">
+                <div class="linkbutton sr64ddlink"><b><i>Super Render 64 DD</i></b></div>
+                <a href="index.html"><div class="linkbutton linkbuttona"><b><i>Home Page</i></b></div></a>
+                <a href="gall.html"><div class="linkbutton linkbuttona"><b><i>Gallery</i></b></div></a>
+                <a href="anim.html"><div class="linkbutton linkbuttona"><b><i>Animations</i></b></div></a>
+                <a href="stuff.html"><div class="linkbutton linkbuttona"><b><i>Other Stuff</i></b></div></a>
+                <a href="about.html"><div class="linkbutton linkbuttona"><b><i>About</i></b></div></a>
+                <a href="links.html"><div class="linkbutton linkbuttona"><b><i>Links</i></b></div></a>
+                <a href="credit.html"><div class="linkbutton linkbuttona credbutton"><b><i>Credits</i></b></div></a>
+                
+            </aside>
+        </div>
+        <main id="rightside" class="rightside">
+            <div id="marquee" class="marq marq3ds">
+                <div id="marq1" class="marquee__item">
+                ABDC., () xxx has Released! 0123ABDC., () xxx has Released! 0123
+                </div>
+            </div>
+            <div id="content" class="content content3ds">
+                <div style="font-size: 24px; padding-top: 10px;"><b>3DS Custom Themes</b></div>
+                <div>A while back I made a few 3DS themes based on things I like (well, pretty much just songs). They're kinda crappy but also cool and I might make more in the future, so why not share them too?</div>
+                
+                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/It.s.a.Mistake.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="It's a Mistake (Men at Work)" data-image="assets/icons/3ds/iampreview.webp"><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/iam3dsicon.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>It's A Mistake</b> 3DS Theme
+                    <p style="font-size: 12px;">2.47 MB - Click here to download</p></div>
+                </div></a>
+
+                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/Travelling.Without.Moving.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="Travelling Without Moving (Jamiroquai)" data-image="assets/icons/3ds/twmpreview.webp"><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/twm3dsicon.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>Travelling Without Moving</b> 3DS Theme
+                    <p style="font-size: 12px;">2.67 MB - Click here to download</p></div>
+                </div></a>
+
+                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/Goodies/Guiding.Lights.-.3DS.Theme.zip" class="texta artist tooltip-link" data-description="Guiding Lights (Earth, Wind & Fire)" data-image="assets/icons/3ds/glpreview.webp"><div style="display: flex;"> 
+                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/gl3dsicon.webp" width="64px" height="64px"></div>
+                    <div style="font-size: 24px; padding-top: 10px;"><b>Guiding Lights</b> 3DS Theme
+                    <p style="font-size: 12px;">2.81 MB - Click here to download</p></div>
+                </div></a>
+
+                <br>To install the themes, use <a href="https://wiki.hacks.guide/wiki/3DS:Custom_themes" class="texta tooltip-link">this guide.</a>
+                <a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/supersecret64.obp"><div class="logo"><video autoplay loop muted playsinline>
+                        <source src="assets/images/walkingpix.webm" type="video/webm">      
+                </video>
+                </div></a>
+                <div class="logo">More goodies are on the way!</div>
+            </div>
+        </main>
+    </div>
+    <div id="tooltip">
+        <img id="tooltip-image" src="" alt="">
+        <div>
+            <p id="tooltip-description"></p>
+        </div>
+    </div>
+</body>
+<script>
+    var safeMarquee = false
+</script>
+<script src="assets/marqueelogic.js"></script>
+<script src="assets/popup.js"></script>
+
+</html>
