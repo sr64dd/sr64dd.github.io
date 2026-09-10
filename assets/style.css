@@ -76,25 +76,7 @@ a {
     text-decoration: none;
 }
 
-.texta:link {
-    color: rgb(180, 180, 255);
-}
 
-.artist:link {
-    color: rgb(255, 251, 196);
-}
-
-.texta:visited {
-    color: rgb(179, 223, 130);
-}
-
-.texta:hover {
-    color: rgb(96, 96, 197);
-}
-
-.texta:active {
-    color: rgb(120, 69, 153);
-}
 
 /* Left side */
 
@@ -179,46 +161,6 @@ a {
     background-image: url(backgrounds/marqueealt.webp);
 }
 
-.marqabout {
-    border-image: url(backgrounds/border4about.webp) 16;
-    background-image: url(backgrounds/marqueeabout.webp);
-}
-
-.marqlink {
-    border-image: url(backgrounds/bordertest4link.webp) 16;
-    background-image: url(backgrounds/marqueelink.webp);
-    color: rgb(194, 152, 36);
-    text-shadow: 0px 0px 8px #ffae00;
-}
-
-.marqxxx {
-    border-image: url(backgrounds/border4xxx.webp) 16;
-    background-image: url(backgrounds/marqueexxx.webp);
-    color: rgb(36, 194, 83);
-    text-shadow: 0px 0px 8px #00ff4c;
-}
-
-.marqstuff {
-    border-image: url(backgrounds/border4stuff.webp) 16;
-    background-image: url(backgrounds/marqueestuff.webp);
-    color: rgb(216, 255, 200);
-    text-shadow: 0px 0px 8px #001402;
-}
-
-.marqanim {
-    border-image: url(backgrounds/border4anim.webp) 16;
-    background-image: url(backgrounds/marqueeanim.webp);
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 8px #0011ff;
-}
-
-.marqgall {
-    border-image: url(backgrounds/border4gall.webp) 16;
-    background-image: url(backgrounds/marqueegall.webp);
-    color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 8px #ff8800;
-}
-
 .marquee__item {
 	animation-duration: 12s ;
 	animation-name: marquee-content ;
@@ -237,7 +179,6 @@ a {
 	}
 }
 
-
 .content {
     border: 16px solid transparent;
     border-image: url(backgrounds/bordertest3.webp) 16;
@@ -246,37 +187,3 @@ a {
     border-radius: 16px;
 }
 
-.contentalt {
-    border-image: url(backgrounds/bordertest3alt.webp) 16;
-    background-image: url(backgrounds/bodybgalt.webp);
-}
-
-.contentlink {
-    border-image: url(backgrounds/bordertest3link.webp) 16;
-    background-image: url(backgrounds/bodybglink.webp);
-}
-
-.contentabout {
-    border-image: url(backgrounds/border3about.webp) 16;
-    background-image: url(backgrounds/bodybgabout.webp);
-}
-
-.contentxxx {
-    border-image: url(backgrounds/border3xxx.webp) 16;
-    background-image: url(backgrounds/bodybgxxx.webp);
-}
-
-.contentstuff {
-    border-image: url(backgrounds/border3stuff.webp) 16;
-    background-image: url(backgrounds/bodybgstuff.webp);
-}
-
-.contentanim {
-    border-image: url(backgrounds/border3anim.webp) 16;
-    background-image: url(backgrounds/bodybganim.webp);
-}
-
-.contentgall {
-    border-image: url(backgrounds/border3gall.webp) 16;
-    background-image: url(backgrounds/bodybggall.webp);
-}

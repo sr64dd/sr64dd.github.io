@@ -1,0 +1,154 @@
+/* Credits */
+.contentalt {
+    border-image: url(backgrounds/bordertest3alt.webp) 16;
+    background-image: url(backgrounds/bodybgalt.webp);
+}
+
+/* Links Page */
+.contentlink {
+    border-image: url(backgrounds/bordertest3link.webp) 16;
+    background-image: url(backgrounds/bodybglink.webp);
+}
+
+.marqlink {
+    border-image: url(backgrounds/bordertest4link.webp) 16;
+    background-image: url(backgrounds/marqueelink.webp);
+    color: rgb(194, 152, 36);
+    text-shadow: 0px 0px 8px #ffae00;
+}
+
+/* About */
+.contentabout {
+    border-image: url(backgrounds/border3about.webp) 16;
+    background-image: url(backgrounds/bodybgabout.webp);
+}
+
+.marqabout {
+    border-image: url(backgrounds/border4about.webp) 16;
+    background-image: url(backgrounds/marqueeabout.webp);
+}
+
+/* Secret */
+.contentxxx {
+    border-image: url(backgrounds/border3xxx.webp) 16;
+    background-image: url(backgrounds/bodybgxxx.webp);
+}
+
+.marqxxx {
+    border-image: url(backgrounds/border4xxx.webp) 16;
+    background-image: url(backgrounds/marqueexxx.webp);
+    color: rgb(36, 194, 83);
+    text-shadow: 0px 0px 8px #00ff4c;
+}
+
+/* Other Stuff */
+.contentstuff {
+    border-image: url(backgrounds/border3stuff.webp) 16;
+    background-image: url(backgrounds/bodybgstuff.webp);
+}
+
+.marqstuff {
+    border-image: url(backgrounds/border4stuff.webp) 16;
+    background-image: url(backgrounds/marqueestuff.webp);
+    color: rgb(216, 255, 200);
+    text-shadow: 0px 0px 8px #001402;
+}
+
+/* Animations */
+.contentanim {
+    border-image: url(backgrounds/border3anim.webp) 16;
+    background-image: url(backgrounds/bodybganim.webp);
+}
+
+.marqanim {
+    border-image: url(backgrounds/border4anim.webp) 16;
+    background-image: url(backgrounds/marqueeanim.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #0011ff;
+}
+
+/* Gallery */
+.contentgall {
+    border-image: url(backgrounds/border3gall.webp) 16;
+    background-image: url(backgrounds/bodybggall.webp);
+}
+
+.marqgall {
+    border-image: url(backgrounds/border4gall.webp) 16;
+    background-image: url(backgrounds/marqueegall.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #ff8800;
+}
+
+/* Bryce Stuff */
+.contentbryce {
+    border-image: url(backgrounds/bordertestbryce.webp) 16;
+    background-image: url(backgrounds/bodybgbryce.webp);
+}
+
+.marqbryce {
+    border-image: url(backgrounds/bordertest4bryce.webp) 16;
+    background-image: url(backgrounds/marqueebryce.webp);
+    color: rgb(145, 197, 247);
+    text-shadow: 0px 0px 8px #001402;
+}
+
+/* 3DS Themes */
+.content3ds {
+    border-image: url(backgrounds/border3funky.webp) 16;
+    background-image: url(backgrounds/bodybgfunky.webp);
+}
+
+.marq3ds {
+    border-image: url(backgrounds/border4funky.webp) 16;
+    background-image: url(backgrounds/marqueefunky.webp);
+    color: rgb(247, 205, 128);
+    text-shadow: 0px 0px 8px #001402;
+}
+
+/* Games */
+.contentgame {
+    border-image: url(backgrounds/border3game.webp) 16;
+    background-image: url(backgrounds/bodybgfunky.webp);
+}
+
+.marqgame {
+    border-image: url(backgrounds/border4game.webp) 16;
+    background-image: url(backgrounds/marqueegame.webp);
+    color: rgb(226, 215, 255);
+    text-shadow: 0px 0px 8px #001402;
+}
+
+
+/* --= Hyperlink Styles =-- */
+.texta:link {
+    color: rgb(180, 180, 255);
+}
+
+.artist:link {
+    color: rgb(255, 251, 196);
+}
+
+.section:link {
+    color: rgb(196, 255, 235);
+}
+
+.texta:visited {
+    color: rgb(179, 223, 130);
+}
+
+.section:visited {
+    color: rgb(196, 255, 235);
+}
+
+.texta:hover {
+    color: rgb(96, 96, 197);
+}
+
+.texta:active {
+    color: rgb(120, 69, 153);
+}
+
+.dead {
+    color: rgb(138, 138, 138);
+}
