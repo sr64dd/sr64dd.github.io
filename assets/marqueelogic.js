@@ -42,7 +42,31 @@ function startMarquee() {
         "My favourite colour is #3b5c0c",
         "For the longest time, the human character with brown hair and grey shirt had no name. How odd to me and me only...",
         "This marquee has been subtle foreshadowing for something huge.",
-        "I hope you're having a splendid day."
+        "I hope you're having a splendid day.",
+        "If there are other universes out there with intelligent life, do you reckon they have Bryce 3D as well?",
+        "Ever type 'lol' with the straightest face possible? Like the room will be silent and I'll type 'lol' and the room will remain silent.",
+        "Get on your 'all that matters is how good I am at something' ark.",
+        "Next on KRNL.TV - Each new patient is a bone-chilling mystery. Tonight, watch C. MD battle against a brave bot infested with viruses. Will the crew be able to handle such a grave patient? Find out... very shortly!",
+        "We NEED more songs that use the didgeridoo.",
+        "√ And so I wonder... Will I win? Or will I lose? √",
+        "'Hey, that rally kind of had a rhythm to it.' 'Huh, what a cosmic coincidence...'",
+        "let randomString = messages[Math.floor(Math.random() * messages.length)];",
+        "\"\"\"In the future, art will be randomly generated\" mfs when humanity triumphs over automaton\" Or something idk I don't draw\" thank you for reading.",
+        "hi",
+        "There's something hidden on this page for sure.",
+        "Keeping checking. The secret's somewhere here.",
+        "Did you know? For any application on earth you'll only ever need a max of 11 digits of pi? That's 3.141592653589, plus one more for good measure ;)",
+        "Feeling pretty rarified right now. Don't mind my parlance, just flexing my vernacular.",
+        "˙ʍou ǝnlq ɯ,I ʞuᴉɥʇ I 'ʞO",
+        "Feeling very 𝓯𝓻𝓮𝓼𝓱. Anyone else feeling 𝓯𝓻𝓮𝓼𝓱",
+        "「スーパー・尿・スープ」。何て書いてあったのか、さっぱり分からない。",
+        "You know what? Try going to sr64dd.github.io/xxx.html. You're gonna look so stupid!",
+        "Would you believe this is the unsafe marquee?",
+        "false. I mean null. I mean undefined.",
+        "Hey, it's me. The marquee writer. I'm actually a third party unrelated to superrender64dd. I hope you like my funny words.",
+        "Betcha you can. Betchya you will!",
+        "Realize this now, you are cracked! You're so cracked you make the stone hinges blush. You're so cracked you give a homebrewed Wii a run for its money. You're so cracked you're unsafe to drink out of!",
+        "In the future, will the marquee be randomly generated?... NEVER!"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {
