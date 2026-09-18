@@ -6,10 +6,37 @@
     <link rel="stylesheet" href="assets/altpagestyles.css">
     <title>Animations - sr64dd</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
-
     <style>
         body {
             background-image: url(assets/backgrounds/bganimtest.webp);
+        }
+
+        .telescreen {
+            border: 16px solid transparent;
+            border-image: url(assets/tele/teletop.webp) 16;
+            border-radius: 16px;
+            background-repeat: no;
+            background-color: black;
+        }
+
+        .telecontrols {
+            border: 12px solid transparent;
+            border-image: url(assets/tele/telebottom.webp) 12;
+            background-image: url(assets/tele/telebottomcontrolsbg.webp);
+            border-radius: 12px;
+            background-repeat: no;
+            background-color: black;
+            width: 508px;
+            height: 24px;
+        }
+
+        .telenamebar {
+            font-family: devinChavez;
+            font-size: 10px;
+            position: absolute; 
+            top: 3px; 
+            left: 8px;
+            text-shadow: 0px 0px 8px #0011ff;
         }
     </style>
 </head>
@@ -38,21 +65,71 @@
                 </div>
             </div>
             <div id="content" class="content contentanim">
-                <div style="font-size: 24px; padding-top: 10px;"><b>Ongoing Animations</b></div>
-                <div>I'm very ambitious. I plan on creating ongoing animations with recurring characters and actual stories. However, I'm also very unskilled, so this section will remain empty for a good while.</div>
-                
+                <div style="font-size: 24px; padding-top: 10px;"><b>My Animations</b></div>
+                <div>I love animation and I strive to make some of my own, but so far that's gone about as well as the rapture; I haven't done anything yet. Hopefully over the next few months I can build this page full of shorts and animations. It beats doing it on YouTube and getting obsessed over numbers that (won't) go up.<br><br>So please enjoy my quaint little animations!</div>
+                <div style="filter: drop-shadow(8px 8px 18px black);">
+                    <div class="logo" style="padding-top: 20px;">
+                        <video id="tele" class="telescreen" src="assets/tele/screenwaiting.webm" muted autoplay width="500px" height="375px"></video>
+                    </div>
+                    <div class="logo">
+                        <div class="telecontrols" style="display: flex; justify-content: center;">
+                            <img id="rewindbutton" onclick="skipVid(-5)" src="assets/tele/controls/telerewind.webp" width="32px" height="24px" draggable="false">
+                            <img id="playpausebutton" onclick="playpauseVid()" src="assets/tele/controls/teleplay.webp" width="32px" height="24px" draggable="false">
+                            <img id="fastfbutton" onclick="skipVid(5)" src="assets/tele/controls/telefastf.webp" width="32px" height="24px" draggable="false">
+                            <img id="looptoggle" onclick="loopVid()" src="assets/tele/controls/teleloopoff.webp" width="64px" height="24px" draggable="false">
+                            <div style="position: relative;">
+                                <img onclick="musicToggle()" src="assets/tele/controls/telenamebar.webp" width="316px" height="24px" draggable="false" >
+                                <p id="telenamebar" class="telenamebar">select a media...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <br>
-                <div style="font-size: 24px; padding-top: 10px;"><b>Other Animations</b></div>
-                <div>Here's some smaller things I've made as tests or just for the fun of it. <br> <br>I was going to embed the videos but for some reason they don't work :d you can go <a href="https://www.youtube.com/@sr64dd" class="texta artist">here instead.</a></div>
-            <div><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+
+                <!-- Uniques -->
+                <div style="font-size: 20px; padding-top: 10px;"><b>Unique Animations</b></div>
+                <div>These are animations with unique characters that don't use audio that isn't mine and aren't part of an ongoing series. So pretty much, the opposite of the below sections.</div>
+                
+                <!-- Repeat Chars -->
+                <br><div style="font-size: 20px; padding-top: 10px;"><b>Animations with Repeat Characters</b></div>
+                <div>These are short animations with characters which I guess are part of the sr64dd 'branding,' specifically Supreno, Jami, and Martar.</div><br>
+                
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                    <img src="assets/icons/video.webp" width="16px" height="16px" style="padding-right:4px;">
+                    <a class="texta videolink">Materials Preset Promo</a>
+                </div>
+
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                    <img src="assets/icons/video.webp" width="16px" height="16px" style="padding-right:4px;">
+                    <a class="texta videolink">Painting at the Beach</a>
+                </div>
+
+                <!-- Other Audio -->
+                <br><div style="font-size: 20px; padding-top: 10px;"><b>Animations based on other Audio</b></div>
+                <div>These are short animations that use audio clips that I think are funny or cool :D</div>
+
+                <!-- Series (like anythings gonna go here anytime soon) -->
+                <br><div style="font-size: 20px; padding-top: 10px;"><i>Ongoing Series</i></div>
+                <div>I'm very ambitious. I plan on creating ongoing animations with recurring characters and actual stories. However, I'm also very unskilled, so this section will remain empty for a good while.</div>
+
+                <!-- No animations down here -->
+                <br><br><div style="font-size: 20px; padding-top: 10px;"><i>A Little about the Television</i></div>
+                <div>You may be wondering what the 'tele' loop option is on the media player. What it's meant to do is play a random video after the previous one finishes. You know, automated entertainment! Well, it only really works when there's a bunch of different videos, so until then it's kinda useless.</div>
+
             </div>
-            
         </main>
     </div>
 </body>
+
 <script>
     var safeMarquee = false
+
+    var animationList = [
+        "https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm",
+        "https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm"
+    ]
 </script>
 <script src="assets/marqueelogic.js"></script>
+<script src="assets/videoplayerlogic.js"></script>
 
 </html>
