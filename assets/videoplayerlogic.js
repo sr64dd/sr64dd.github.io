@@ -76,6 +76,9 @@ function loopVid() {
     } else if (loopType == "loop") {
         loopType = "tvloop"
         loopButton.src = "assets/tele/controls/telelooprandom.webp"
+        if (teleNameBar.innerHTML == "select a media...") {
+            telePlayer.src = "assets/tele/telescreentvmode.webm"
+        }
     } else if (loopType == "tvloop") {
         loopType = "noloop"
         loopButton.src = "assets/tele/controls/teleloopoff.webp"
