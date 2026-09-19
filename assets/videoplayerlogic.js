@@ -96,7 +96,10 @@ function onVideoEnd() {
             telePlayer.play()
         } else if (loopType == "tvloop") {
             currentVideo++
+            if (currentVideo == animationList.length) {currentVideo = 0}
             telePlayer.src = animationList[currentVideo]
+            teleNameBar.innerHTML = "tv mode (" + currentVideo + ")"
+            pauseButton.src = "assets/tele/controls/telepause.webp"
         } else {
             telePlayer.src = "assets/tele/screenwaiting.webm"
             teleNameBar.innerHTML = "select a media..."
