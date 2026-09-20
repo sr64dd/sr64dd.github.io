@@ -78,6 +78,7 @@ function loopVid() {
         loopButton.src = "assets/tele/controls/telelooprandom.webp"
         if (teleNameBar.innerHTML == "select a media...") {
             telePlayer.src = "assets/tele/telescreentvmode.webm"
+            currentVideo = -1
         }
     } else if (loopType == "tvloop") {
         loopType = "noloop"
@@ -90,15 +91,22 @@ function onVideoEnd() {
     if (telePlayer.src == "assets/tele/screenwaiting.webm") {
         telePlayer.currentTime == 0
         telePlayer.play()
-    } else {
+    } 
+    else if (telePlayer.src != "https://file.garden/aqpxu2Xqr5_e-KgS/creditsroll.webm" ) {
         if (loopType == "loop") {
             telePlayer.currentTime == 0
             telePlayer.play()
         } else if (loopType == "tvloop") {
             currentVideo++
-            if (currentVideo == animationList.length) {currentVideo = 0}
-            telePlayer.src = animationList[currentVideo]
-            teleNameBar.innerHTML = "tv mode (" + currentVideo + ")"
+            if (currentVideo == animationList.length) {
+                currentVideo = -1
+                teleNameBar.innerHTML = "thanks for tuning in!"
+                telePlayer.muted = false
+                telePlayer.src = "https://file.garden/aqpxu2Xqr5_e-KgS/creditsroll.webm"
+            } else {
+                telePlayer.src = animationList[currentVideo]
+                teleNameBar.innerHTML = "tv mode (" + currentVideo + ")"
+            }
             pauseButton.src = "assets/tele/controls/telepause.webp"
         } else {
             telePlayer.src = "assets/tele/screenwaiting.webm"
