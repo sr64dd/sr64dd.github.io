@@ -89,8 +89,8 @@
 .marqbryce {
     border-image: url(backgrounds/bordertest4bryce.webp) 16;
     background-image: url(backgrounds/marqueebryce.webp);
-    color: rgb(145, 197, 247);
-    text-shadow: 0px 0px 8px #001402;
+    color: rgb(23, 204, 38);
+    text-shadow: 0px 0px 8px #005709;
 }
 
 /* 3DS Themes */
@@ -103,7 +103,7 @@
     border-image: url(backgrounds/border4funky.webp) 16;
     background-image: url(backgrounds/marqueefunky.webp);
     color: rgb(247, 205, 128);
-    text-shadow: 0px 0px 8px #001402;
+    text-shadow: 0px 0px 8px #d8a705;
 }
 
 /* Games */
@@ -116,7 +116,7 @@
     border-image: url(backgrounds/border4game.webp) 16;
     background-image: url(backgrounds/marqueegame.webp);
     color: rgb(226, 215, 255);
-    text-shadow: 0px 0px 8px #001402;
+    text-shadow: 0px 0px 8px #c7abe7;
 }
 
 
@@ -147,6 +147,14 @@
 
 .texta:active {
     color: rgb(120, 69, 153);
+}
+
+.videolink:hover {
+    color: rgb(197, 96, 96);
+}
+
+.videolink:active {
+    color: rgb(255, 255, 255);
 }
 
 .dead {
