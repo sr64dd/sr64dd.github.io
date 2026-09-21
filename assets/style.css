@@ -114,8 +114,8 @@ a {
 }
 
 .sr64ddlink {
-    background-image: url(interactive/linkheader.webp); 
-    color: rgb(221, 245, 255);
+    background-image: url(interactive/linkctc.webp); 
+    color: rgb(221, 205, 192);
 }
 
 
@@ -149,8 +149,8 @@ a {
     padding-top: 8px;
     height: 24px;
     color: rgb(194, 36, 36);
-    overflow: hidden ;
-    white-space: nowrap ;
+    overflow: hidden;
+    white-space: nowrap;
     font-family: devinChavez;
     font-size: 12px;
     text-shadow: 0px 0px 8px #ff0000;
