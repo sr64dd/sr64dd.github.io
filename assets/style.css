@@ -179,6 +179,7 @@ a {
 	}
 }
 
+/* Rainbow */
 .content {
     border: 16px solid transparent;
     border-image: url(backgrounds/bordertest3.webp) 16;
@@ -187,3 +188,28 @@ a {
     border-radius: 16px;
 }
 
+.rbow {
+            color: rgb(255, 209, 149);
+            -webkit-animation: hue 3s infinite linear;
+            animation: hue 3s infinite linear;
+        }
+
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(-180deg);
+            }
+
+            to {
+                -webkit-filter: hue-rotate(180deg);
+            }
+        }
+
+        @keyframes hue {
+            from {
+                filter: hue-rotate(-180deg);
+            }
+
+            to {
+                filter: hue-rotate(180deg);
+            }
+        }
