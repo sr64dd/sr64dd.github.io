@@ -60,6 +60,11 @@
 
             pointer-events: none;
         }
+
+        #downloadableslist {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     </style>
 </head>
 <body>
@@ -82,53 +87,66 @@
                 <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Goodies</b></div>
                 <div>Here's a collection of a few custom made materials and skies for Bryce 3D, as well as modifications to existing materials. I've used a lot of these in renders of my own. There's a good handful in here with a lot of variance. In here is also a few other collections of stuff.</div>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/SR64DD.s.Materials.and.Skies.zip" class="texta artist tooltip-link" data-description="The OG collection of Bryce goodies. Complete with 50 materials and 32 skies! A value pack you will find nowhere else..."><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/materialsicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">SR64DD's <b>Materials and Skies for Bryce</b>
-                    <p style="font-size: 12px;">14.4 MB - Click here to download (MAT, SKY)</p></div>
-                </div></a>
+                <br>
+                <a id="fliporder" style="padding-left: 30px" class="texta artist" onclick="flipOrder()">🠟 Ordered by Newest 🠟</a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Cruising.the.Canyon.Rigs.and.Lens.zip" class="texta artist tooltip-link" data-description="A small collection of the rigs featured in Cruising the Canyon and a premade fish-eye lens. How convenient!"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/ctclogo1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">Cruising the Canyon <b>Rig Examples and Lens</b>
-                    <p style="font-size: 12px;">24.5 MB - Click here to download (BR7, OBJ)</p></div>
-                </div></a>
+                <div id="downloadableslist">
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/SR64DD.s.Materials.and.Skies.zip" class="texta artist tooltip-link" data-description="The OG collection of Bryce goodies. Complete with 50 materials and 32 skies! A value pack you will find nowhere else..."><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/materialsicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">SR64DD's <b>Materials and Skies for Bryce</b>
+                        <p style="font-size: 12px;">14.4 MB - Click here to download (MAT, SKY)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/A.Couple.Couple.Textures.zip" class="texta artist tooltip-link" data-description="A collection with a handful of textures and skies that use those textures for their clouds. It ain't much but it's pretty. What more could you ask for?"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/texturesicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">A Couple Couple <b>Textures and Skies</b>
-                    <p style="font-size: 12px;">437 KB - Click here to download (TEX, SKY)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Cruising.the.Canyon.Rigs.and.Lens.zip" class="texta artist tooltip-link" data-description="A small collection of the rigs featured in Cruising the Canyon and a premade fish-eye lens. How convenient!"><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/ctclogo1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">Cruising the Canyon <b>Rig Examples and Lens</b>
+                        <p style="font-size: 12px;">24.5 MB - Click here to download (BR7, OBJ)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Random.Skies.bsk" class="texta artist tooltip-link" data-description="35 Bryce sky presets all made using clouds that were randomly generated in the deep texture editor. Some of these are very broad and suitable for generic day scenes. Others are really specific and probably aren't applicable to all renders. Still, they're pretty neat, so why not try them out?"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/randomskyicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Skies</b> made from Random Textures
-                    <p style="font-size: 12px;">1.72 MB - Click here to download (SKY)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/A.Couple.Couple.Textures.zip" class="texta artist tooltip-link" data-description="A collection with a handful of textures and skies that use those textures for their clouds. It ain't much but it's pretty. What more could you ask for?"><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/texturesicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">A Couple Couple <b>Textures and Skies</b>
+                        <p style="font-size: 12px;">437 KB - Click here to download (TEX, SKY)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/More.Atmospheres.mat" class="texta artist tooltip-link" data-description="A collection of 31 Surface and 20 Volume atmospheric materials, plus a couple of alterations on those. I don't really know how practical a lot of them will be but most of them are really solid and almost all of them are adjacent to the pre-existing atmospheric materials."><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/moreatmosicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">More <b>Atmospheric Materials</b>
-                    <p style="font-size: 12px;">1.44 MB - Click here to download (MAT)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Random.Skies.bsk" class="texta artist tooltip-link" data-description="35 Bryce sky presets all made using clouds that were randomly generated in the deep texture editor. Some of these are very broad and suitable for generic day scenes. Others are really specific and probably aren't applicable to all renders. Still, they're pretty neat, so why not try them out?"><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/randomskyicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;"><b>Bryce Skies</b> made from Random Textures
+                        <p style="font-size: 12px;">1.72 MB - Click here to download (SKY)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/SR64DDs.Prop.Toy.Box.obp" class="texta artist tooltip-link" data-description="20 object presets for stuff I've used in my own renders, including the Dirt Path and Graffiti Decal mentioned in Cruising the Canyon, as well as special returning guest, worldwide phenominon, renowned star, THE NUUUUUUUUKE!!!"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/propsicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">  SR64DD's <b>Prop Toy Box</b>
-                    <p style="font-size: 12px;">30.8 MB - Click here to download (OBJ)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/More.Atmospheres.mat" class="texta artist tooltip-link" data-description="A collection of 31 Surface and 20 Volume atmospheric materials, plus a couple of alterations on those. I don't really know how practical a lot of them will be but most of them are really solid and almost all of them are adjacent to the pre-existing atmospheric materials."><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/moreatmosicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">More <b>Atmospheric Materials</b>
+                        <p style="font-size: 12px;">1.44 MB - Click here to download (MAT)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Rainbow.Collection.mat" class="texta artist tooltip-link" data-description="A materials collection comprised of 10 materials for Red, Yellow, Green, Blue, and Purple themes, as well as an additional 10 Rainbow materials. That's 60 materials! How magical!"><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/rainbowicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;">  The <b>Rainbow Collection</b>
-                    <p style="font-size: 12px;">1.63 MB - Click here to download (MAT)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/SR64DDs.Prop.Toy.Box.obp" class="texta artist tooltip-link" data-description="20 object presets for stuff I've used in my own renders, including the Dirt Path and Graffiti Decal mentioned in Cruising the Canyon, as well as special returning guest, worldwide phenominon, renowned star, THE NUUUUUUUUKE!!!"><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/propsicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">  SR64DD's <b>Prop Toy Box</b>
+                        <p style="font-size: 12px;">30.8 MB - Click here to download (OBJ)</p></div>
+                    </div></a>
 
-                <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Nothing.but.Blue.Skies.bsk" class="texta artist tooltip-link" data-description="A small pack with 21 sky presets. Some are realistic looking while others are wacky, but I guess they're all blue... so that's something."><div style="display: flex;"> 
-                    <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/blueskyicon1.webp" width="64px" height="64px"></div>
-                    <div style="font-size: 24px; padding-top: 10px;"><img src="assets/icons/NEW.webp" width="24px" height="12px"> Nothing but <b>Blue Skies</b>
-                    <p style="font-size: 12px;">1.02 MB - Click here to download (SKY)</p></div>
-                </div></a>
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Rainbow.Collection.mat" class="texta artist tooltip-link" data-description="A materials collection comprised of 10 materials for Red, Yellow, Green, Blue, and Purple themes, as well as an additional 10 Rainbow materials. That's 60 materials! How magical!"><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/rainbowicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">  The <b>Rainbow Collection</b>
+                        <p style="font-size: 12px;">1.63 MB - Click here to download (MAT)</p></div>
+                    </div></a>
+
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Nothing.but.Blue.Skies.bsk" class="texta artist tooltip-link" data-description="A small pack with 21 sky presets. Some are realistic looking while others are wacky, but I guess they're all blue... so that's something."><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/blueskyicon1.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;">Nothing but <b>Blue Skies</b>
+                        <p style="font-size: 12px;">1.02 MB - Click here to download (SKY)</p></div>
+                    </div></a>
+
+                    <br><a href="https://github.com/sr64dd/sr64dd.github.io/releases/download/BryceStuff/Organ.Kit.obp" class="texta artist tooltip-link" data-description="Everybody please stand for the Organ Kit, a small pack (well, small in content, not so much file size) that contains probably my most elaborate model, the Organ, as well as the stool featured in the same render."><div style="display: flex;"> 
+                        <div style="padding-left: 30px; padding-right: 10px;"><img src="assets/icons/organicon.webp" width="64px" height="64px"></div>
+                        <div style="font-size: 24px; padding-top: 10px;"><img src="assets/icons/NEW.webp" width="24px" height="12px"> The <b>Organ Kit</b>
+                        <p style="font-size: 12px;">28.6 MB - Click here to download (OBJ)</p></div>
+                    </div></a>
+
+                    <br>
+                </div>
 
                 <br><div>I don't need you to credit me if you make a render that uses these. Consider these "on the house" ;)</div><br>
                 
@@ -150,6 +168,19 @@
 </body>
 <script>
     var safeMarquee = false
+    const flipButton = document.getElementById("fliporder")
+    const listOfPacks = document.getElementById("downloadableslist")
+
+    function flipOrder() {
+        if (flipButton.innerText == "🠟 Ordered by Newest 🠟") {
+            flipButton.innerText = "🠝 Ordered by Oldest 🠝"
+            listOfPacks.style.flexDirection = "column"
+        }
+        else {
+            flipButton.innerText = "🠟 Ordered by Newest 🠟"
+            listOfPacks.style.flexDirection = "column-reverse"
+        }
+    }
 </script>
 <script src="assets/marqueelogic.js"></script>
 <script src="assets/popup.js"></script>
