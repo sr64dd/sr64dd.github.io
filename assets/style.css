@@ -22,6 +22,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: cursivepixel;
+    src: url('fonts/Cursive.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 16px;
@@ -133,6 +141,25 @@ a {
     color: white;
 }
 
+/* Left side bottom */
+.bottomsidebar {
+    padding: 8px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clipboard {
+    background-image: url(icons/clipboard.webp);
+    width: 48px;
+    height: 48px;
+}
+
+.clipboard:active {
+    background-image: url(icons/clipboardclicked.webp);
+}
+
 /* Right side */
 
 .rightside {
@@ -179,7 +206,6 @@ a {
 	}
 }
 
-/* Rainbow */
 .content {
     border: 16px solid transparent;
     border-image: url(backgrounds/bordertest3.webp) 16;
@@ -188,28 +214,34 @@ a {
     border-radius: 16px;
 }
 
+.contentnopadding {
+    border: 16px solid transparent;
+    border-radius: 16px;
+}
+
+/* Rainbow */
 .rbow {
-            color: rgb(255, 209, 149);
-            -webkit-animation: hue 3s infinite linear;
-            animation: hue 3s infinite linear;
-        }
+    color: rgb(255, 209, 149);
+    -webkit-animation: hue 3s infinite linear;
+    animation: hue 3s infinite linear;
+}
 
-        @-webkit-keyframes hue {
-            from {
-                -webkit-filter: hue-rotate(-180deg);
-            }
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(-180deg);
+    }
 
-            to {
-                -webkit-filter: hue-rotate(180deg);
-            }
-        }
+    to {
+        -webkit-filter: hue-rotate(180deg);
+    }
+}
 
-        @keyframes hue {
-            from {
-                filter: hue-rotate(-180deg);
-            }
+@keyframes hue {
+    from {
+        filter: hue-rotate(-180deg);
+    }
 
-            to {
-                filter: hue-rotate(180deg);
-            }
-        }
+    to {
+        filter: hue-rotate(180deg);
+    }
+}
