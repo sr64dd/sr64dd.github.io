@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/altpagestyles.css">
+    <title id="tabtitle">Newsletter - sr64dd</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <style>
+        body {
+            background-image: url(assets/backgrounds/bgtally.webp);
+            background-repeat: round;
+            animation-duration: 4s ;
+            animation-name: backgroundscrolling ;
+            animation-timing-function: linear ;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes backgroundscrolling {
+            0% {
+                background-position: 0px 0px;
+            }
+            100% {
+                background-position: 400px 0;
+            }
+        }
+
+        .newsletter {
+            width: 740px;
+            border: 14px solid transparent;
+            border-image: url(assets/backgrounds/tallylights1.webp) 14;
+            border-image-repeat: repeat;
+            animation-duration: 0.4s ;
+            animation-name: lightsscrolling ;
+            animation-timing-function: step-end ;
+            animation-iteration-count: infinite;
+            color: rgb(64, 255, 47);
+        }
+
+        .statistics { 
+            border: 14px solid transparent;
+            border-image: url(assets/backgrounds/tallylights1.webp) 14;
+            border-image-repeat: repeat;
+            width: 740px;
+            animation-duration: 0.4s ;
+            animation-name: lightsscrolling ;
+            animation-timing-function: step-end ;
+            animation-iteration-count: infinite;
+            color: rgb(113, 113, 255);
+        }
+
+        @keyframes lightsscrolling {
+            0% {
+                border-image-source: url(assets/backgrounds/tallylights1.webp);
+            }
+            50% {
+                border-image-source: url(assets/backgrounds/tallylights2.webp);
+            }
+            100% {
+                border-image-source: url(assets/backgrounds/tallylights1.webp);
+            }
+        }
+
+        .newsletterheader {
+            font-size: 24px; 
+            padding: 10px; 
+            font-family: cursivepixel;
+            color: rgb(88, 255, 37);
+            text-shadow: 2px 2px 8px rgb(0, 71, 10);
+            justify-self: center;
+        }
+
+        .statsheader {
+            font-size: 24px; 
+            padding: 10px; 
+            font-family: cursivepixel;
+            color: rgb(60, 60, 255);
+            text-shadow: 2px 2px 8px rgb(0, 0, 131);
+            justify-self: center;
+        }
+
+        .oldpost:hover {
+            color: rgb(255, 255, 255);
+        }
+        .oldpost:active {
+            color: rgb(88, 255, 37);
+        }
+        .oldpost:visited {
+            color: rgb(255, 204, 37);
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <div id="leftside">
+            <div id="logo" class="logo">
+                <img src="assets/images/sr64decal.webp" width="240px" height="240px" draggable="false">
+            </div>
+            <aside id="sidebar" class="sidebar"></aside>
+        </div>
+        <main id="rightside" class="rightside">
+            <div id="marquee" class="marq marqtally">
+                <div id="marq1" class="marquee__item">
+                ABDC., () xxx has Released! 0123ABDC., () xxx has Released! 0123
+                </div>
+            </div>
+            <div id="content" class="contentnopadding contenttally">
+                <div id="newsletter" class="newsletter">
+                    <div class="newsletterheader"><b>Website Newsletter</b></div>
+                    <div style="font-size: 24px; padding-left: 10px; font-family: Comic Sans Ms; justify-self: center;">
+                        <img id="prevblog" onclick="incrementBlog(-1)" src="assets/icons/prevblog.webp" draggable="false">   
+                        <b><u id="blogtitle">00. Oh wow cool new thing!</u></b>
+                        <img id="prevblog" onclick="incrementBlog(1)" src="assets/icons/nextblog.webp" draggable="false">   
+                    </div>
+                    <div id="blogbody" style="padding: 12px; font-family: Comic Sans Ms; font-size: 14px;">
+                    </div>
+                </div>
+                <div id="statistics" class="statistics">
+                    <div class="statsheader"><b>Past Letters</b></div>
+                    <div style="padding: 12px; font-family: Comic Sans Ms; font-size: 14px;">Past letters will be listed here for your convenience! Beat's clicking the arrow a billion times.</div>
+                    <ul style="font-family: Comic Sans Ms; font-size: 14px;">
+                        <!-- <li><a class="oldpost" onclick="changeBlog(0)">00. Oh wow cool new thing!</a></li> -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+    var safeMarquee = false
+
+</script>
+<script src="assets/marqueelogic.js"></script>
+<script src="assets/sidebarcomponent.js"></script>
+<script src="assets/blog.js"></script>
+
+</html>
