@@ -67,7 +67,8 @@ function startMarquee() {
         "Betcha you can. Betchya you will!",
         "Realize this now, you are cracked! You're so cracked you make the stone hinges blush. You're so cracked you give a homebrewed Wii a run for its money. You're so cracked you're unsafe to drink out of!",
         "In the future, will the marquee be randomly generated?... NEVER!",
-        "Extra! Extra! More stuff to read has landed on the site! And don't worry. It's not educational ;)"
+        "Extra! Extra! More stuff to read has landed on the site! And don't worry. It's not educational ;)",
+        "If you were to describe something that is empty, would you use baron, barron, baren, or barren?"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {
