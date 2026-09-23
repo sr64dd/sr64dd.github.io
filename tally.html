@@ -97,7 +97,9 @@
             <div id="logo" class="logo">
                 <img src="assets/images/sr64decalpixel.webp" width="240px" height="240px" draggable="false">
             </div>
-            <aside id="sidebar" class="sidebar"></aside>
+            <aside id="sidebar" class="sidebar">
+                
+            </aside>
         </div>
         <main id="rightside" class="rightside">
             <div id="marquee" class="marq marqtally">
@@ -109,17 +111,17 @@
                     <div class="newsletterheader"><b>Website Newsletter</b></div>
                     <div style="font-size: 24px; padding-left: 10px; font-family: Comic Sans Ms; justify-self: center;">
                         <img id="prevblog" onclick="incrementBlog(-1)" src="assets/icons/prevblog.webp" draggable="false">   
-                        <b><u id="blogtitle">00. Oh wow cool new thing!</u></b>
+                        <b><u id="blogtitle">01. Can it get any better?</u></b>
                         <img id="prevblog" onclick="incrementBlog(1)" src="assets/icons/nextblog.webp" draggable="false">   
                     </div>
                     <div id="blogbody" style="padding: 12px; font-family: Comic Sans Ms; font-size: 14px;">
+                        
                     </div>
                 </div>
                 <div id="statistics" class="statistics">
                     <div class="statsheader"><b>Past Newsletters</b></div>
                     <div style="padding: 12px; font-family: Comic Sans Ms; font-size: 14px;">Past newsletters will be listed here for your convenience! Beat's clicking the arrow a billion times.</div>
-                    <ul style="font-family: Comic Sans Ms; font-size: 14px;">
-                        <!-- <li><a class="oldpost" onclick="changeBlog(0)">00. Oh wow cool new thing!</a></li> -->
+                    <ul id="pastlist" style="font-family: Comic Sans Ms; font-size: 14px;">
                     </ul>
                 </div>
             </div>
@@ -131,7 +133,7 @@
 
 </script>
 <script src="assets/marqueelogic.js"></script>
-<script src="assets/sidebarcomponent.js"></script>
 <script src="assets/blog.js"></script>
+<script src="assets/sidebarcomponent.js"></script>
 
 </html>
