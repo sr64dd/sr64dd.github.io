@@ -1,6 +1,7 @@
 var blogPosts = {
     0 : {
         "title" : "00. Oh wow cool new thing!",
+        "date" : "22/09/26",
         "body" : `Isn't this page something! Take it all in, the Comic Sans, the animated border... just beautiful.
                         <br><br>This page is going to have more personal stuff on it like plans I have for this website and other stuff too. I guess it would be more fitting to be a blog instead of a newsletter but I won't keep it strictly about me. No one is going to see this anyways, but in 2050 if the internet isn't defunked or infested with political nausea or only populated by 1% organic life and 99% bots, maybe someone will click on this page and read my stuff and look at my renders, and maybe feel just a bit nostalgic.
                         <br><br>Sorry to start off so grim, but I'd rather know my stuff isn't popular than wonder why my swarm of fans haven't manifested yet.
@@ -13,6 +14,7 @@ var blogPosts = {
     },
     1 : {
         "title" : "01. Can it get any better?",
+        "date" : "23/09/26",
         "body" : `On Instagram I saw a post about <a class="oldpost" href="https://guyhilism.neocities.org/">a website</a> by the artist <a class="oldpost" href="https://www.instagram.com/shitshow_1.0/">shitshow_1.0</a> which is probably one of the coolest websites I've seen on the internet. Every pixel of the page is filled with charm, including the home page which happened to feature a board where you can post comments. That got me thinking about guestbooks that older websites had where visitors would leave a comment for your page.
                         <br><br>Unfortunately now that I've thought about it, I'm obsessed. "I want it! It's everything!"
                         <br><br>I'm writing this in advance because I know it will take a shit ton of time and frustration to make, but I think it's the perfect addition to the site's more personal change.
@@ -29,8 +31,10 @@ var currentBlog = Object.keys(blogPosts).length - 1
 function changeBlog(blogNum) {
     let blogTitle = blogPosts[blogNum].title
     let blogBody = blogPosts[blogNum].body
+    let blogDate = blogPosts[blogNum].date
     titleElem.innerHTML = blogTitle
     bodyElem.innerHTML = blogBody
+    document.getElementById("date").innerHTML = blogDate
     document.getElementById("tabtitle").innerHTML = "Newsletter - " + currentBlog + " - sr64dd"
 }
 
