@@ -10,6 +10,15 @@ var blogPosts = {
                         <br><br>If you're here for Bryce 3D stuff only, this is probably the page where you'll find it the least. I recommend reading <a class="oldpost" href="index.html">CTC</a> or downloading my packs if you haven't already and you want to. Or hell, just go render something. I'm planning a lot for this site because right now it's just kinda barren. Sure there's the Animations page and some of my renders on the gallery page, but still it's just... empty.
                         <br><br>Well I say no more emptiness! I'm gonna make animations, and renders, and new tutorials like <a class="oldpost" href="assets/pdfversions/Installing Bryce 3 Tutorial.pdf">this one,</a> and games and more 3DS themes with Jamiroquai music and so many Bryce presets. This site will be prosperous, filled with so many goodies.
                         <br><br>See you in the next newsletter! I promise it won't be as long as this one probably maybe.`
+    },
+    1 : {
+        "title" : "01. Can it get any better?",
+        "body" : `On Instagram I saw a post about <a class="oldpost" href="https://guyhilism.neocities.org/">a website</a> by the artist <a class="oldpost" href="https://www.instagram.com/shitshow_1.0/">shitshow_1.0</a> which is probably one of the coolest websites I've seen on the internet. Every pixel of the page is filled with charm, including the home page which happened to feature a board where you can post comments. That got me thinking about guestbooks that older websites had where visitors would leave a comment for your page.
+                        <br><br>Unfortunately now that I've thought about it, I'm obsessed. "I want it! It's everything!"
+                        <br><br>I'm writing this in advance because I know it will take a shit ton of time and frustration to make, but I think it's the perfect addition to the site's more personal change.
+                        <br><br>I also want a viewcounter on the same page. Usually I'm opposed to metrics, I just see them as something to obsess over and get upset when they don't change. However I'm coming to terms with the idea that this site is primarily for me. If I want it, I just do it. So the viewcounter will be added!
+                        <br><br>I'm using <a class="oldpost" href="https://fdiengdoh.neocities.org/how-i-created-my-guestbook">this tutorial by Farlando Diengdoh,</a> if it works out I'll also add the site to the Credits page. Otherwise I guess it's here.
+                        <br><br>Hopefully the next update is either once the guestbook is done or not tomorrow.`
     }
 }
 
