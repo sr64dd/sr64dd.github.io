@@ -45,4 +45,32 @@ function incrementBlog(indexAdder) {
     }
 }
 
+let currentBlogPast = 0
+
+function genPastList() {
+    const pastlist = document.getElementById("pastlist")
+
+    for (var key in blogPosts) {
+        // skip loop if the property is from prototype
+        if (!blogPosts.hasOwnProperty(key)) continue;
+
+        var obj = blogPosts[key];
+        
+        for (var prop in obj) {
+            // skip loop if the property is from prototype
+            if (!obj.hasOwnProperty(prop)) continue;
+
+            // your code
+            
+
+            if (prop == "title") {
+                pastlist.innerHTML += '<li><a class="oldpost" onclick="changeBlog('+currentBlogPast+')">'+obj[prop]+'</a></li>'
+                currentBlogPast++
+            }
+        }
+    }
+
+}
+
+genPastList()
 changeBlog(currentBlog)
