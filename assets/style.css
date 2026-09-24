@@ -30,6 +30,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: GCursive;
+    src: url('fonts/GCursive.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 16px;
@@ -160,6 +169,16 @@ a {
     background-image: url(icons/clipboardclicked.webp);
 }
 
+.guestbook {
+    background-image: url(icons/guestbook.webp);
+    width: 48px;
+    height: 48px;
+}
+
+.guestbook:active {
+    background-image: url(icons/guestbookclicked.webp);
+}
+
 /* Right side */
 
 .rightside {
@@ -224,6 +243,12 @@ a {
     color: rgb(255, 209, 149);
     -webkit-animation: hue 3s infinite linear;
     animation: hue 3s infinite linear;
+}
+
+.rbowslow {
+    color: rgb(255, 209, 149);
+    -webkit-animation: hue 6s infinite linear;
+    animation: hue 6s infinite linear;
 }
 
 @-webkit-keyframes hue {
