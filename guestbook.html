@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/altpagestyles.css">
+    <title>Guestbook - sr64dd</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <style>
+        body {
+            background-image: url(assets/backgrounds/bgguestbook.webp);
+            background-repeat: repeat;
+            animation-duration: 20s ;
+            animation-name: backgroundscrolling ;
+            animation-timing-function: linear ;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes backgroundscrolling {
+            0% {
+                background-position: 0px 0px;
+            }
+            100% {
+                background-position: 400px 400px;
+            }
+        }
+
+        .comment {
+            border: 12px solid transparent;
+            background-clip:content-box;
+            background-color: #FFCB8C;
+            width: 700px;
+            filter: drop-shadow(8px 8px 18px black);
+            color: black;
+            text-shadow: none;
+        }
+
+        .comment p {
+            line-height: normal;
+        }
+
+        .comment-body {
+            padding-left: 4px;
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .comment-body p {
+            flex: 1;
+            min-width: 0;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        .comment-body canvas {
+            flex-shrink: 0;
+            margin-right: 10px;
+        }
+
+        .invertedsticky {
+            padding-left: 4px;
+            border: 12px solid transparent;
+            border-image: url(assets/guestbook/stickynoteinverted.webp) 12;
+            border-radius: 24px;
+            background-color: #003372;
+            width: 710px;
+            filter: drop-shadow(8px 8px 18px rgb(0, 0, 0));
+            color: rgb(255, 255, 255);
+            text-shadow: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .pin {
+            content: "";
+            position: absolute;
+
+            width: 36px;
+            height: 36px;
+
+            top: -35px;
+            right: -15px;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: none;
+            pointer-events: none;
+        }
+
+        #stampCanvas {
+            width: 160px;
+            height: 160px;
+            image-rendering: pixelated;
+            border: 2px solid black;
+            background: white;
+            cursor: crosshair;
+            touch-action: none;
+        }
+
+        .guestStamp {
+            width: 64px;
+            height: 64px;
+            image-rendering: pixelated;
+        }
+
+        .formelem {
+            display: flex;
+            flex-direction: row;
+        }
+
+        form {
+            color: rgb(243, 243, 228);
+            font-weight: bold;
+            font-family: helvNeue;
+            font-size: 14px;
+            background-image: url(assets/guestbook/formbgbig.webp);
+            width: 740px;
+            height: 438px;
+        }
+
+        .commentpart {
+            padding: 18px;
+            padding-top: 30px;
+            color: #151615;
+            text-shadow: none;
+        }
+
+        .writtenonpage {
+            padding: 6px;
+            margin: 8px 0;
+            display: inline-block;
+            color: #151615;
+            background: none;
+            border: none;
+            border-radius: 0;
+            box-sizing: border-box;
+            font-family: devinChavez;
+            font-size: 9px;
+        }
+
+        .writtenonpage::placeholder {
+            color: #353535;
+        }
+
+        .colourspart {
+            padding-top: 10px;
+            justify-items: center;
+            align-items: center;
+            text-align:center;
+            padding-right: 40px;
+        }
+
+        .colourpicker {
+            background: none;
+            border: none;
+            width: 36px;
+            height: 36px;
+        }
+
+        .slider {
+            appearance: none;
+            width: 75%;
+            height: 4px;
+            background-image: linear-gradient(#6F88A4, #96B6D8);
+            outline: none;
+        }
+
+        select, button {
+            color: #d0e4fa;
+            font-family: devinChavez;
+            font-size: 9px;
+            padding: 2px;
+            background-color: #003372;
+            background-image: url(assets/guestbook/selectbg.webp);
+        }
+
+        .selectalt, button {
+            color: #fad0e1;
+            font-family: devinChavez;
+            font-size: 9px;
+            padding: 2px;
+            background-color: #633947;
+            background-image: url(assets/guestbook/selectbgalt.webp);
+            border-color: #b997a3;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background-image: url(assets/guestbook/sliderknob.webp);
+            cursor: pointer;
+        }
+
+        .checkbox {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            background-image: url(assets/guestbook/rainbowcheckofff.webp);
+        }
+
+        .checkbox:checked {
+            background-image: url(assets/guestbook/rainbowcheckon.webp);
+        }
+
+        .stamppart {
+            padding-top: 20px;
+        }
+
+        .signbutton {
+            height: 32px;
+            background-image: url(assets/guestbook/signbuttonbg.webp);
+            color: #1b150d;
+            border-color: #1b150d;
+            padding: 10px;
+        }
+
+        .signbutton:active {
+            background-image: url(assets/guestbook/signbuttonbgpressed.webp);
+            color: #f8dbb6;
+        }
+
+        .comment-form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <div id="leftside">
+            <div id="logo" class="logo">
+                <img src="assets/images/sr64decal.webp" width="240px" height="240px" draggable="false">
+            </div>
+            <aside id="sidebar" class="sidebar">
+
+            </aside>
+        </div>
+        <main id="rightside" class="rightside">
+            <div id="marquee" class="marq marqguestbook">
+                <div id="marq1" class="marquee__item">
+                </div>
+            </div>
+            <div id="content" class="content contentguestbook" style="min-height: 450px;">
+                <div style="text-align: center; font-size: 54px; padding-top: 10px; font-family: GCursive;"><b>Guestbook</b></div>
+                <br>
+                <a onclick="document.getElementById('comment-form').style.display = 'block';">
+                    <div class="invertedsticky" id="invertedsticky">
+                    <img class="pin" src="assets/guestbook/stickynotepin.webp">
+                    <b id="invertstick">Thank you for signing my guestbook! <i>Click here to update your signature.</i></b>
+                    </div>
+                </a>
+                <br>
+                <div class="comment-form" id="comment-form">
+                    <form id="guestbookForm" class="formelem">
+                        <div class="formminisection commentpart" style="width: 300px;">
+                            <label for="name">Name:</label><br>
+                            <input class="writtenonpage" type="text" id="name" maxlength="30" required placeholder="Your name or alias">             
+                            <br>
+                            <label for="comment">Comment:</label><br>
+                            <textarea class="writtenonpage" id="comment" rows="25" maxlength="500" style="max-width:211px; max-height:300px;" required placeholder="Leave a message!"></textarea>     
+                        </div>
+                        <br><br>
+                        <div class="formminisection colourspart" style="width: 230px;">
+                            <label for="name">Name Colour:</label><br>
+                            <input class="colourpicker" type="color" id="nameColour" name="favcolor" value="#000000">
+                            <br><br>
+                            <label for="name">Comment Colour:</label><br>
+                            <input class="colourpicker" type="color" id="commentColour" name="favcolor" value="#000000">
+                            <br><br>
+                            <label for="name">Background Hue</label><br>
+                            <input id="bgColour" type="range" min="-180" max="180" value="0" class="slider">
+                            <br><br>
+                            <label for="name">Border Type</label><br>
+                            <select id="borderType" onchange="updateMiniBG()">
+                                <option value="">Blank</option>
+                                <option value="leopard">Leopard</option>
+                                <option value="checker">Checkers</option>
+                                <option value="lines">Lines</option>
+                                <option value="bolts">Bolts</option>
+                                <option value="playingcard">Playing Card</option>
+                                <option value="curveborder">Solid</option>
+                                <option value="blocks">Blocks</option>
+                                <option value="treasuremap">Treasure Map</option>
+                                <option value="filefolder">Folder</option>
+                                <option value="ripped">Ripped</option>
+                                <option value="404">404</option>
+                                <option value="eyeballing">Eyeballs</option>
+                            </select>
+                            <br><br>
+                            <img id="minibg" src="assets/guestbook/stickynote.webp" style="filter: hue-rotate(0deg);">
+                            <br><br>
+                            <label for="name">Rainbow?</label><br>
+                            <input class="checkbox" type="checkbox" id="rainbow">
+                            <br><br>
+                            <label for="name">Pin Type</label><br>
+                            <select id="pinType" onchange="updateMiniPin()">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="purple">Purple</option>
+                                <option value="paperclip">Paperclip</option>
+                                <option value="aero">Supraero</option>
+                                <option value="dorfic">Dorficeno</option>
+                                <option value="thumbtack">Thumbtack</option>
+                                <option value="flower">Flower</option>
+                                <option value="ladybug">Ladybug</option>
+                                <option value="meta1">Metaballs 1</option>
+                                <option value="meta2">Metaballs 2</option>
+                                <option value="supreno">Supreno</option>
+                                <option value="jami">Jami</option>
+                                <option value="martar">Martar</option>
+                                <option value="moonfloat">Moon Float</option>
+                                <option value="box">Box</option>
+                                <option value="crab">Crab</option>
+                                <option value="plant">Plant</option>
+                                <option value="antline">Antline</option>
+                                <option value="ctc">CTC Mountain</option>
+                                <option value="bluescreen">Bluescreen</option>
+                                <option value="installer">Installerscreen</option>
+                                <option value="earth">Earth</option>
+                                <option value="moon">Moon</option>
+                                <option value="nuke">Nuke</option>
+                                <option value="booth">Booth</option>
+                                <option value="biohazard">Biohazard</option>
+                                <option value="fish">Weird Fish</option>
+                                <option value="whiskey">Whiskey</option>
+                                <option value="slime">Slime</option>
+                                <option value="bubbles">Bubbles</option>
+                                <option value="minianim">Mini Anim Player</option>
+                                <option value="minimarq">Mini Marquee</option>
+                                <option value="cd">CD</option>
+                                <option value="3ds">3DS</option>
+                                <option value="gb">Gamething</option>
+                                <option value="smiley">Smiley</option>
+                                <option value="sr64dd">SR64DD Decal</option>
+                                <option value="sr64ddsprite">SR64DD Sprite</option>
+                            </select>
+                            <br><img id="minipin" src="assets/guestbook/stickynotepin.webp" width="36px" height="36px" draggable="false">
+                        <br><br>
+                        </div>
+                        <div class="formminisection stamppart">
+                            <p>Make a little stamp!</p>
+                            <canvas id="stampCanvas" width="16" height="16"></canvas>
+                            <br>
+                            <button type="button" id="clearStamp">Clear</button><button type="button" onclick="swapColours()" id="swapColoursButton">Swap Colours</button>
+                            <br><br>
+                            <label for="name">Filled colour (applied on submission)</label>
+                            <br>
+                            <select id="pixelArtFG" class="selectalt">
+                                <option value="black">Black</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="magenta">Magenta</option>
+                            </select>
+                            
+                            <br><br><label for="name"><i>Leave blank to exclude stamp.</i></label>
+                            <br><br><button type="submit" class="btn-grad signbutton" id="submitBtn">Sign Guestbook</button>
+                            <p id="formStatus"></p>
+                        </div>
+                    </form>
+                </div>
+                
+                <br><br>
+                <div id="commentsContainer" style="padding-left: 4px;">
+
+                </div>
+                <br>
+        </main>
+    </div>
+</body>
+<script>
+    var safeMarquee = false
+
+    function updateMiniPin() {
+        const miniPin = document.getElementById('minipin')
+        miniPin.src = "assets/guestbook/stickynotepin" + document.getElementById('pinType').value + ".webp"
+    }
+
+    const bgColSlider = document.getElementById('bgColour');
+    const miniBG = document.getElementById('minibg');
+
+    bgColSlider.addEventListener('input', (event) => {
+        const degrees = event.target.value;
+        miniBG.style.filter = `hue-rotate(${degrees}deg)`;
+    });
+
+    function updateMiniBG() {
+        miniBG.src = "assets/guestbook/stickynote" + document.getElementById('borderType').value + ".webp"
+    }
+
+</script>
+<script src="assets/marqueelogic.js"></script>
+<script src="assets/guestbookstamp.js"></script>
+<script src="assets/guestbooklogic.js"></script>
+<script src="assets/sidebarcomponent.js"></script>
+
+</html>
