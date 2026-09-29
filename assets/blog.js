@@ -21,6 +21,23 @@ var blogPosts = {
                         <br><br>I also want a viewcounter on the same page. Usually I'm opposed to metrics, I just see them as something to obsess over and get upset when they don't change. However I'm coming to terms with the idea that this site is primarily for me. If I want it, I just do it. So the viewcounter will be added!
                         <br><br>I'm using <a class="oldpost" href="https://fdiengdoh.neocities.org/how-i-created-my-guestbook">this tutorial by Farlando Diengdoh,</a> if it works out I'll also add the site to the Credits page. Otherwise I guess it's here.
                         <br><br>Hopefully the next update is either once the guestbook is done or not tomorrow.`
+    },
+    2 : {
+        "title" : "02. Oog oog old web better?",
+        "date" : "30/09/26",
+        "body" : `The guestbook is now live! Well, it was live a few days ago but I didn't want to make a post about it since it probably would have been just "guestbook is out. Go sign it!" A common issue I've faced when making new pages with the same layout is padding in the middle area. If it's too short the buttons look like they're popping out of nothing, and I'd rather fill the space than leave it empty.
+                        <br><br>Anyways do go sign it. I want to transform this site slowly into more of a personal space to hang out and do stuff and less of a portal to CTC and my bryce stuff. Of course CTC will still be the main focus, but I want to put other non-CTC related stuff on here too.
+                        <br><br>Also I'm really into the old web. Like I yearn for it. I close my eyes and I see gif borders and blinding bright colours and Times New Roman.
+                        <br><br>Though I do have something to confess. I don't want to date this site so I won't use the specific dreaded L word, but I'm not exactly deserving of nostalgia for the old web. However the stuff of now is garbage! So if I have the opportunity to make something I like, why not?
+                        <br><br>Sanctimonius gloating aside, the original idea I had for this site was for it to have a bunch of random redirects. Like more than there should be. Sort of like a B3313 thing. That would take a lot of time and would sort of be ruined by the page having a github repository, but it remains a really cool idea.
+                        <br><br>Maybe dd46rs.github.io can be a maze of website you get to from here.
+                        <br><br>All this talk of interconnected pages stems from a <a href="https://web.archive.org/web/20000229060139/http://www.sweeet.com/">sweeet.com.</a> I found out about it via an instagram repost of old sweeet wallpapers and I tried searching for the site on the Wayback machine. Sweeet is full of South Park content and is what I'm hoping to achieve with this site. 
+                        <br><br>Though an interesting thing was that the site linked to other whole websites which were also dedicated South Park pages. A lot of sites too, like they were part of some collective.
+                        <br><br><div style="text-align: center;"><img src="https://unsweeetened.com/wp-content/uploads/2024/04/KENNYLOO1024X768-640x480.jpg" width="200px" height="150px"></div>
+                        <br>Redirecting through an infinite stream of random South Park sites, each one brimming with charm and dedication, was quite the pleasent experience. Of course that's the work of a whole community spanning a few years but it's still inspirational.
+                        <br><br>So hopefully in the coming days, weeks, months, even years, this site will develop into something more than it is now. As of writing this I'm trying to make more animations. So far this site has three and they all feature Supreno, Jami and Martar, who are the sr64 mascots I guess. I'm making new characters for these newer animations. Also hopefully going to add sound.
+                        <br><br>If I keep working at it, I might just get good at it.
+                        <br><br>Thank you for reading. Have a great day :) `
     }
 }
 
