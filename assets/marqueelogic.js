@@ -69,6 +69,7 @@ function startMarquee() {
         "In the future, will the marquee be randomly generated?... NEVER!",
         "Extra! Extra! More stuff to read has landed on the site! And don't worry. It's not educational ;)",
         "If you were to describe something that is empty, would you use baron, barron, baren, or barren?",
+        "Now Boarding flights 9 to Arecaceby, 15 to Aerostruct.",
         "Sign my guestbook!"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];

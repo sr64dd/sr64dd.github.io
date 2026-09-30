@@ -2,6 +2,7 @@ var blogPosts = {
     0 : {
         "title" : "00. Oh wow cool new thing!",
         "date" : "22/09/26",
+        "category" : "Special",
         "body" : `Isn't this page something! Take it all in, the Comic Sans, the animated border... just beautiful.
                         <br><br>This page is going to have more personal stuff on it like plans I have for this website and other stuff too. I guess it would be more fitting to be a blog instead of a newsletter but I won't keep it strictly about me. No one is going to see this anyways, but in 2050 if the internet isn't defunked or infested with political nausea or only populated by 1% organic life and 99% bots, maybe someone will click on this page and read my stuff and look at my renders, and maybe feel just a bit nostalgic.
                         <br><br>Sorry to start off so grim, but I'd rather know my stuff isn't popular than wonder why my swarm of fans haven't manifested yet.
@@ -15,6 +16,7 @@ var blogPosts = {
     1 : {
         "title" : "01. Can it get any better?",
         "date" : "23/09/26",
+        "category" : "Cool Web + This Site",
         "body" : `On Instagram I saw a post about <a class="oldpost" href="https://guyhilism.neocities.org/">a website</a> by the artist <a class="oldpost" href="https://www.instagram.com/shitshow_1.0/">shitshow_1.0</a> which is probably one of the coolest websites I've seen on the internet. Every pixel of the page is filled with charm, including the home page which happened to feature a board where you can post comments. That got me thinking about guestbooks that older websites had where visitors would leave a comment for your page.
                         <br><br>Unfortunately now that I've thought about it, I'm obsessed. "I want it! It's everything!"
                         <br><br>I'm writing this in advance because I know it will take a shit ton of time and frustration to make, but I think it's the perfect addition to the site's more personal change.
@@ -25,6 +27,7 @@ var blogPosts = {
     2 : {
         "title" : "02. Oog oog old web better?",
         "date" : "30/09/26",
+        "category" : "Cool Web + This Site",
         "body" : `The guestbook is now live! Well, it was live a few days ago but I didn't want to make a post about it since it probably would have been just "guestbook is out. Go sign it!" A common issue I've faced when making new pages with the same layout is padding in the middle area. If it's too short the buttons look like they're popping out of nothing, and I'd rather fill the space than leave it empty.
                         <br><br>Anyways do go sign it. I want to transform this site slowly into more of a personal space to hang out and do stuff and less of a portal to CTC and my bryce stuff. Of course CTC will still be the main focus, but I want to put other non-CTC related stuff on here too.
                         <br><br>Also I'm really into the old web. Like I yearn for it. I close my eyes and I see gif borders and blinding bright colours and Times New Roman.
@@ -39,6 +42,14 @@ var blogPosts = {
                         <br><br>If I keep working at it, I might just get good at it.
                         <br><br>Thank you for reading. Have a great day :) `
     }
+}
+
+var tagcolours = {
+    "Special" : "magenta",
+    "Cool Web + This Site" : "aquamarine",
+    "Cool Web" : "greenyellow",
+    "This Site" : "aqua",
+    "Ramblings" : "purple"
 }
 
 const titleElem = document.getElementById("blogtitle")
@@ -76,16 +87,15 @@ function genPastList() {
         if (!blogPosts.hasOwnProperty(key)) continue;
 
         var obj = blogPosts[key];
-        
         for (var prop in obj) {
             // skip loop if the property is from prototype
             if (!obj.hasOwnProperty(prop)) continue;
 
             // your code
             
-
             if (prop == "title") {
-                pastlist.innerHTML += '<li><a class="oldpost" onclick="changeBlog('+currentBlogPast+')">'+obj[prop]+'</a></li>'
+                let currentCategory = obj["category"]
+                pastlist.innerHTML += '<li><a class="oldpost" onclick="changeBlog('+currentBlogPast+')">'+obj[prop]+'</a><b style="color: '+tagcolours[currentCategory]+'"> ['+currentCategory+']</b></li>'
                 currentBlogPast++
             }
         }

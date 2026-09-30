@@ -145,6 +145,32 @@
     text-shadow: 0px 0px 8px #e7cdab;
 }
 
+/* Cool Sites */
+.contentcool {
+    border-image: url(backgrounds/border3cool.webp) 16;
+    background-image: url(backgrounds/bodybgcool.webp);
+}
+
+.marqcool {
+    border-image: url(backgrounds/border4cool.webp) 16;
+    background-image: url(backgrounds/marqueecool.webp);
+    color: rgb(138, 238, 200);
+    text-shadow: 0px 0px 8px #abe7ab;
+}
+
+/* Non Bryce */
+.contentnonbryce {
+    border-image: url(backgrounds/border3nonbryce.webp) 16;
+    background-image: linear-gradient(to right,black,rgb(0, 0, 78),rgb(0, 0, 104),rgb(0, 0, 104),rgb(0, 0, 78),black);
+}
+
+.marqnonbryce {
+    border-image: url(backgrounds/border4nonbryce.webp) 16;
+    background-image: url(backgrounds/marqueenonbryce.webp);
+    color: rgb(245, 146, 248);
+    text-shadow: 0px 0px 8px rgb(176, 65, 180);
+}
+
 /* --= Hyperlink Styles =-- */
 .texta:link {
     color: rgb(180, 180, 255);
