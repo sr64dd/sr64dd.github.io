@@ -270,3 +270,46 @@ a {
         filter: hue-rotate(180deg);
     }
 }
+
+/* Right Side Bottom */
+.nextsongbutton {
+    content: url(bar/nextoff.webp);
+}
+
+.nextsongbutton:hover {
+    content: url(bar/nexton.webp);
+}
+
+.stopsongbutton {
+    content: url(bar/stopoff.webp);
+}
+
+.stopsongbutton:hover {
+    content: url(bar/stopon.webp);
+}
+
+#musicdrawer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s steps(6);
+    padding-left: 20px;
+    width: 240px;
+    
+}
+
+#musicdrawer.open {
+    height: 240px;
+}
+
+.playerframe {
+    padding: 11px 9px 29px 31px;
+    background-image: url(bar/drawer.webp);
+}
+
+#bar {
+    position: relative;
+}
+
+#musicplayerbar {
+    filter: drop-shadow(8px 8px 18px black);
+}
