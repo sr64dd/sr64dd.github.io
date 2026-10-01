@@ -291,7 +291,7 @@ a {
 #musicdrawer {
     height: 0;
     overflow: hidden;
-    transition: height 0.4s steps(6);
+    transition: height 0.4s  linear;
     padding-left: 20px;
     width: 240px;
     
