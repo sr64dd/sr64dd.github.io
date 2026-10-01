@@ -4,7 +4,7 @@ document.getElementById("sidebar").innerHTML = `<rbow class="rbow"><div class="l
                 <a href="anim.html"><div class="linkbutton linkbuttona"><b><i>Animations</i></b></div></a>
                 <a href="stuff.html"><div class="linkbutton linkbuttona"><b><i>Other Stuff</i></b></div></a>
                 <a href="about.html"><div class="linkbutton linkbuttona"><b><i>About</i></b></div></a>
-                <a href="links.html"><div class="linkbutton linkbuttona"><b><i>Links</i></b></div></a>
+                <a href="links.html"><div class="linkbutton linkbuttona"><b><i>Bryce Links</i></b></div></a>
                 <a href="credit.html"><div class="linkbutton linkbuttona credbutton"><b><i>Credits</i></b></div></a>
                 <div class="bottomsidebar"><a class="guestbook" href="guestbook.html"></a><a class="clipboard" href="tally.html"></a></div>`;
 
