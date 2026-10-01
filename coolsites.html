@@ -11,6 +11,16 @@
         body {
             background-image: url(assets/backgrounds/bgcool.webp);
         }
+
+        #musicDrawer {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.4s steps(6);
+        }
+
+        #musicDrawer.open {
+            height: 200px;
+        }
     </style>
 </head>
 <body>
@@ -59,8 +69,10 @@
             </div>
             <br>
             <div id="musicplayerbar">
-                <div id="ytPlayer"></div>
-                <button id="playButton" disabled onclick="playMusic()">play music</button>
+                <div id="musicDrawer">
+                    <div id="ytPlayer"></div>
+                </div>
+                <button id="playButton"  onclick="playMusic()">play music</button>
             </div>
         </main>
     </div>
@@ -70,47 +82,10 @@
 <script>
 
 var safeMarquee = false
-var currentSong = 0
-
-const musicPlaylist = [
-    "_WxXi7dvi4c",
-    "3f-jQxceV6o"
-]
-
-var player;
-
-function onYouTubeIframeAPIReady() {
-    player = new YT.Player('ytPlayer', {
-        width: 560,
-        height: 315,
-        playerVars: {
-            'playsinline': 1,
-            'origin': 'https://sr64dd.github.io'
-        },
-        events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-        }
-    });
-}
-
-function onPlayerReady(event) {
-    document.getElementById("playButton").disabled = false
-}
-
-function onPlayerStateChange(event) {
-    if (event.data == YT.PlayerState.ENDED) {
-        currentSong++
-        player.loadVideoById(musicPlaylist[currentSong])
-    }
-}
-
-function playMusic() {
-    player.loadVideoById(musicPlaylist[0])
-}
 
 </script>
 <script src="assets/marqueelogic.js"></script>
 <script src="assets/sidebarcomponent.js"></script>
+<script src="assets/musicplayerlogic.js"></script>
 
 </html>
