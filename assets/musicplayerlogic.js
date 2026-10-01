@@ -12,13 +12,127 @@ const musicPlaylists = {
         "HuhDSkJH9cc",
         "jHo0YQuJNhY",
         "D28LNzfQKtc",
-        "nBUxr7uiLR0"
+        "nBUxr7uiLR0",
+        "bNvhCDtfK74",
+        "awKDsl2zAk4",
+        "nPOvEord2W8",
+        "K01qpf7-Rks",
+        "fXeKi6ZkbOw",
+        "57DKvbDQHPA",
+        "MUQE18DiASg",
+        "DSxOpx7lEO4",
+        "9pkNoI75KGM",
+        "juEzbSmWpHQ",
+        "vQSI-rUUYqA",
+        "tLXb8hwvrp8",
+        "GJY03C-JFL4",
+        "_CpcWtwdZ1U",
+        "xpFC7hK3DW0",
+        "F51rnHrEBx8",
+        "xbq-Mr6pRsw",
+        "Yq3SbXGz8i4",
+        "HMOTuRhYgc4",
+        "0YJDlzOwPyY",
+        "oTlcNrtZX0k",
+        "_Ukl2A9YiLg",
+        "_WxXi7dvi4c",
+        "1TxgfbPl9Qg",
+        "KW8Or4BPDQo",
+        "wLhLWZuIoBs",
+        "e-lyWxjvGKY",
+        "WLsnFQvxw3I",
+        "pvyLdqbiHVg",
+        "TXah7y6XVxg",
+        "9q-UHJXQxXk",
+        "D6_giwdl0jA",
+        "4eJ7k831NQU",
+        "81VFzsNRwKA",
+        "dwEdWXje50I",
+        "r9nJO9I0oFI",
+        "uOVCIt5lKSg",
+        "DekP3COYGuw",
+        "L0qBulm0hbg",
+        "muIEJzymPCE",
+        "7l3m44fAYAE",
+        "oME6YGFLn_k",
+        "Wihi-H1Rivs"
     ],
     "reg" : [
         "saaCpdzZ6SM",
         "qchPLaiKocI",
         "qih-jEFPxFc",
-        "owk9KNH0Qdg"
+        "owk9KNH0Qdg",
+        "44d3CfZrC4o",
+        "f8YTa-CvS4w",
+        "vKaMhXSJGWo",
+        "ye3VdSOG4hQ",
+        "PD7KKcbzfaM",
+        "0CKe0MUCLqY",
+        "rI7yrHXQ_S8",
+        "zAsoF18YUlg",
+        "OWiVJMgms9E",
+        "lqjI4KIuSo8",
+        "pigZgNUwiyU",
+        "ifKk6Iim0pU",
+        "-j1HMu6Z1sA",
+        "m0O79CuOUPs",
+        "rBxaAEF_24M",
+        "dXH_-shZMUg",
+        "oxh2cGs7jok",
+        "Zu9a29UR2dU",
+        "D5UXwMNuq1A",
+        "r58GQYFZeLE",
+        "3f-jQxceV6o",
+        "00dx5w0gqnE",
+        "_93PWvC2_vU",
+        "id_L5_6fhEw",
+        "6Z2xClustQo",
+        "8QEHR0V6Ydk",
+        "CpUeKH5RAqI",
+        "Iju54f4CN8Y",
+        "sw1OwMrh7XA",
+        "LOeMqXVjga8",
+        "lGqVR78vnAg",
+        "Gq_twJwXRdU",
+        "bJ0Rk3piR44",
+        "Gk5RokrBfGk",
+        "XfMpN5YT058",
+        "FqICKupwP6Y",
+        "cROOfFnisDk",
+        "N47SWUcYhQU",
+        "vB8dweYCLes",
+        "efJGDpCSrJY",
+        "_nHiX9DdE3U",
+        "AsRzDFf5GCA",
+        "9FbJw0nlofA",
+        "QH2PXqZxZn0",
+        "qpgk7DoUz9w",
+        "9VjgGIS4yo4",
+        "46uFsJpS3yk",
+        "iVOzVE_g5kk",
+        "AiCqa-tb0do",
+        "MFg4wgYPFf4",
+        "dNaT5jAZ620",
+        "969B9-V_Bac",
+        "TounIThLmXw",
+        "3WA6Y5uJB7g",
+        "DEO1w1YPnoQ",
+        "wNjPjh6oIFI",
+        "5YbfGwuh570",
+        "pJOF5mu91mY",
+        "GieQq3eWSnE",
+        "Zjqcf5F0YRg",
+        "OFNrN_6Ta5I",
+        "M5iSEdo5VNI",
+        "fpTyBkppvyc",
+        "Ck0LO6b6OQc",
+        "VZkRAp9XMIg",
+        "-38yJGUvBD8",
+        "H_J9KtK_1c4",
+        "eTaHk10gcOw",
+        "-0srGzIW_5w",
+        "yrD4yAozRTw",
+        "kj4K87jvvyI"
     ],
     "intense" : [
         "qffVd9KmGZo",
@@ -30,7 +144,31 @@ const musicPlaylists = {
         "4R1mdXie5sg",
         "LuGAWR2eRyQ",
         "AY7ktU1Db2A",
-        "7NZ85Q37Obc"
+        "7NZ85Q37Obc",
+        "ifmVski9fkI",
+        "Ro8K8qDsYTs",
+        "bKzV1pLDNp4",
+        "MwMv27wMSAo",
+        "DmqK1EKcvCs",
+        "NRObQbJiaiQ",
+        "em_Iy8YJ82k",
+        "LC2WpBcdM_A",
+        "-s97_bBGobQ",
+        "YVC-AHuSaFM",
+        "AxuTd9rwEHQ",
+        "sqZKKeXGGG8",
+        "7fDu1v0ZzbI",
+        "l4L78W66kCI",
+        "UywKZcH_Wk0",
+        "U0IFg4i62RI",
+        "99x3Bv7dfHo",
+        "FDlDKvidYbk",
+        "9f5fFXx5B9c",
+        "HinUbBv3b_Y",
+        "QjcA2xSH25Y",
+        "cgEifPjDS7E",
+        "2hrFnkOcpbg",
+        "3pLdV2O6yiI"
     ]
 }
 
@@ -50,9 +188,9 @@ function shuffle(array) {
   }
 }
 
-//shuffle(musicPlaylists["chill"])
-//shuffle(musicPlaylists["reg"])
-//shuffle(musicPlaylists["intense"])
+shuffle(musicPlaylists["chill"])
+shuffle(musicPlaylists["reg"])
+shuffle(musicPlaylists["intense"])
 
 var player
 var currentPlaylist = ""
@@ -146,7 +284,8 @@ const flavourAd = {
         "give me something upbeat!",
         "just a light tune, thanks.",
         "how about a nice jam?",
-        "nothing hot, nothing cold."
+        "nothing hot, nothing cold.",
+        "what's your most elegant?"
     ],
     2 : [
         "gimme something soothing...",
@@ -155,7 +294,8 @@ const flavourAd = {
         "how about an ambient one?",
         "how's your quieter stuff?",
         "just something easy, thanks.",
-        "give me something mellow."
+        "give me something mellow.",
+        "bit of anything will do."
     ],
     3 : [
         "gimme something that kicks!",
@@ -165,12 +305,13 @@ const flavourAd = {
         "how about something new?",
         "I'm here for the long haul!",
         "let's party!",
+        "make me confused... please."
     ]
 }
 
 function advertise(tender) {
     if (currentPlaylist == "" && viewerReady) {
-        let chosenFlavour = Math.floor(Math.random() * 6)
+        let chosenFlavour = Math.floor(Math.random() * 7)
         flavourText.innerText = flavourAd[tender][chosenFlavour]
     }
 }
