@@ -43,9 +43,11 @@
                     <li><a href="https://web.archive.org/web/20000229060139/http://www.sweeet.com/" class="texta artist"><i>Sweeet.com via Wayback Machine</i></a> - og site that hosted a shit ton of south park content.</li>
                     <li><a href="https://guyhilism.neocities.org/" class="texta artist"><i>Guyhilism</i></a> - insanely awesome art site.</li>
                     <li><a href="https://spinebreaker.nekoweb.org/" class="texta artist"><i>Spinebreaker</i></a> - another incredible website.</li>
+                    <li><a href="https://www.artsforge.com/jan/ternald.html" class="texta artist"><i>Jan Ternald's</i></a> - old super detailed bryce artist.</li>
                     <br>
                     <li><a href="https://skins.webamp.org/" class="texta"><i>Winamp Museum</i></a> - collection of winamp themes.</li>
-                    <li><a href="https://skins.webamp.org/" class="texta"><i>88x31 Collection</i></a> - bunch of images like the one at the end of this page.</li>
+                    <li><a href="https://88x31.nl/" class="texta"><i>88x31 Collection</i></a> - bunch of images like the one at the end of this page.</li>
+                    <li><a href="https://wiby.me/" class="texta"><i>wiby</i></a> - bunch of random old nostalgic websites.</li>
                 </ul>
                 <div style="text-align: center;">
                     <a href="https://spinebreaker.nekoweb.org/" title="Spine Breaker's Webpage">
@@ -61,13 +63,16 @@
             <div id="musicplayerbar">
                 <div id="bar" style="line-height: 0px;">
                     <img src="assets/bar/bartemp.webp">
+                    <p id="bardisplaytext">pick a bartender</p>
                     <img class="nextsongbutton" style="position: absolute; top: 62px; left: 260px;" id="nextbutton" onclick="nextSong()" src="assets/bar/nextoff.webp" draggable="false">
                     <img class="stopsongbutton" style="position: absolute; top: 62px; left: 330px;" id="stopbutton" onclick="stopSong()" src="assets/bar/stopoff.webp" draggable="false">
                 </div>
                 <div id="musicdrawer">
                     <div id="ytPlayer" class="playerframe"></div>
                 </div>
-                <button id="playButton"  onclick="playMusic()">play music</button>
+                <button id="playButton1" onclick="playMusic('chill')">play music chill</button>
+                <button id="playButton2" onclick="playMusic('reg')">play music reg</button>
+                <button id="playButton3" onclick="playMusic('intense')">play music intense</button>
             </div>
         </main>
     </div>
