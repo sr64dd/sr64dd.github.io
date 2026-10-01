@@ -59,7 +59,7 @@
             </div>
             <br>
             <div id="musicplayerbar">
-                <iframe id="ytPlayer" width="560" height="315" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div id="ytPlayer"></div>
                 <button id="playButton" disabled onclick="playMusic()">play music</button>
             </div>
         </main>
@@ -81,6 +81,8 @@ var player;
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytPlayer', {
+        width: 560,
+        height: 315,
         playerVars: {
             'playsinline': 1,
             'origin': 'https://sr64dd.github.io'
