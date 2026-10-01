@@ -59,12 +59,14 @@
             </div>
             <br>
             <div id="musicplayerbar">
-                <iframe id="ytPlayer" width="560" height="315" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin" origin="https://sr64dd.github.io"></iframe>
+                <iframe id="ytPlayer" width="560" height="315" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <button id="playButton" disabled onclick="playMusic()">play music</button>
             </div>
         </main>
     </div>
 </body>
+
+<script src="https://www.youtube.com/iframe_api"></script>
 <script>
 
 var safeMarquee = false
@@ -80,11 +82,12 @@ var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytPlayer', {
         playerVars: {
-        'playsinline': 1
+            'playsinline': 1,
+            'origin': 'https://sr64dd.github.io'
         },
         events: {
             'onReady': onPlayerReady,
-        'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange
         }
     });
 }
