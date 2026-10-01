@@ -167,7 +167,7 @@ const flavourAd = {
 }
 
 function advertise(tender) {
-    if (currentPlaylist != "" && viewerReady) {
+    if (currentPlaylist == "" && viewerReady) {
         let chosenFlavour = Math.floor(Math.random() * 6)
         flavourText.innerText = flavourAd[tender][chosenFlavour]
     }
