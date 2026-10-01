@@ -1,0 +1,340 @@
+@font-face {
+    font-family: helvNeue;
+    src: url('fonts/HelveticaNeueLight.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: helvNeue;
+    src: url('fonts/HelveticaNeueMedium.otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: devinChavez;
+    src: url('fonts/devin-chavez-font.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: cursivepixel;
+    src: url('fonts/Cursive.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: GCursive;
+    src: url('fonts/GCursive.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    border-style: solid;
+    border-color: transparent ;
+    background-clip: padding-box;
+    border-width: 10px; 
+    border-image-source: url('scrollbar/scrollthumbtrack.webp');
+    border-image-slice: 8 fill; 
+    border-image-repeat: stretch; 
+}
+
+::-webkit-scrollbar-thumb {
+    border-style: solid;
+    border-color: transparent ;
+    background-clip: padding-box;
+    border-width: 10px; 
+    border-image-source: url('scrollbar/scrollthumb.webp');
+    border-image-slice: 8 fill; 
+    border-image-repeat: stretch; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border-image-source: url('scrollbar/scrollthumbhover.webp');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px #000000;
+    font-family: helvNeue;
+    font-weight:350;
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 0px;
+}
+
+.page {
+    padding-top: 60px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* Left side */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.linkbutton {
+    background-image: url(interactive/link.webp);
+    width: 270px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-family: helvNeue;
+    text-shadow: 2px 2px 8px #000000;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 3px;
+    background-repeat: no-repeat;
+    filter: drop-shadow(2px 2px 8px black);
+    font-weight: normal;
+}
+
+.spec {
+    background-image: url(interactive/linkctc.webp); 
+    color: rgb(221, 205, 192);
+}
+
+.sr64ddlink {
+    background-image: url(interactive/linkctc.webp); 
+    color: rgb(221, 205, 192);
+}
+
+
+.credbutton {
+    background-image: url(interactive/linkcredit.webp); 
+    color: rgb(221, 245, 255);
+}
+
+.linkbuttona:hover {
+    color: grey;
+}
+
+.linkbuttona:active {
+    background-image: url(interactive/linkpressed.webp);
+    color: white;
+}
+
+/* Left side bottom */
+.bottomsidebar {
+    padding: 8px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.clipboard {
+    background-image: url(icons/clipboard.webp);
+    width: 48px;
+    height: 48px;
+}
+
+.clipboard:active {
+    background-image: url(icons/clipboardclicked.webp);
+}
+
+.guestbook {
+    background-image: url(icons/guestbook.webp);
+    width: 48px;
+    height: 48px;
+}
+
+.guestbook:active {
+    background-image: url(icons/guestbookclicked.webp);
+}
+
+/* Right side */
+
+.rightside {
+    width: 800px;
+    filter: drop-shadow(8px 8px 18px black);
+}
+
+.marq {
+    border: 16px solid transparent;
+    border-image: url(backgrounds/bordertest4.webp) 16;
+    background-image: url(backgrounds/marquee.webp);
+    border-radius: 16px;
+    background-repeat: no;
+    padding-top: 8px;
+    height: 24px;
+    color: rgb(194, 36, 36);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: devinChavez;
+    font-size: 12px;
+    text-shadow: 0px 0px 8px #ff0000;
+}
+
+.marqalt {
+    border-image: url(backgrounds/bordertest4alt.webp) 16;
+    background-image: url(backgrounds/marqueealt.webp);
+}
+
+.marquee__item {
+	animation-duration: 12s ;
+	animation-name: marquee-content ;
+	animation-timing-function: linear ;
+    display: inline-block;
+}
+
+@keyframes marquee-content {
+	/* Element one fully ON screen at left-edge of container. */
+	from {
+		transform: translateX(var(--start-x));
+	}
+	/* Element one fully OFF screen (just beyond left-ledge of container). */
+	to {
+		transform: translateX(var(--end-x));
+	}
+}
+
+.content {
+    border: 16px solid transparent;
+    border-image: url(backgrounds/bordertest3.webp) 16;
+    padding: 12px;
+    background-image: url(backgrounds/bodybg.webp);
+    border-radius: 16px;
+}
+
+.contentnopadding {
+    border: 16px solid transparent;
+    border-radius: 16px;
+}
+
+/* Rainbow */
+.rbow {
+    color: rgb(255, 209, 149);
+    -webkit-animation: hue 3s infinite linear;
+    animation: hue 3s infinite linear;
+}
+
+.rbowslow {
+    color: rgb(255, 209, 149);
+    -webkit-animation: hue 6s infinite linear;
+    animation: hue 6s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(-180deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(180deg);
+    }
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(-180deg);
+    }
+
+    to {
+        filter: hue-rotate(180deg);
+    }
+}
+
+/* Right Side Bottom */
+.nextsongbutton {
+    content: url(bar/nextoff.webp);
+}
+
+.nextsongbutton:hover {
+    content: url(bar/nexton.webp);
+}
+
+.stopsongbutton {
+    content: url(bar/stopoff.webp);
+}
+
+.stopsongbutton:hover {
+    content: url(bar/stopon.webp);
+}
+
+#musicdrawer {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s steps(6);
+    padding-left: 20px;
+    width: 240px;
+    
+}
+
+#musicdrawer.open {
+    height: 240px;
+}
+
+.playerframe {
+    padding: 11px 9px 29px 31px;
+    background-image: url(bar/drawer.webp);
+}
+
+#bar {
+    position: relative;
+}
+
+#musicplayerbar {
+    filter: drop-shadow(8px 8px 18px black);
+}
+
+#bardisplaytext {
+    position: absolute; 
+    top: 65px; 
+    left: 20px; 
+    font-family: devinChavez; 
+    font-size: 9px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(24, 0, 241);
+}
+
+.bartender1 {content: url(bar/bartenders/bartender1_idle.webp);}
+.bartender1:hover {content: url(bar/bartenders/bartender1_hover.webp);}
+.bartender1.happy {content: url(bar/bartenders/bartender1_them.webp);}
+.bartender1.sad {content: url(bar/bartenders/bartender1_other.webp);}
+
+.bartender2 {content: url(bar/bartenders/bartender2_idle.webp);}
+.bartender2:hover {content: url(bar/bartenders/bartender2_hover.webp);}
+.bartender2.happy {content: url(bar/bartenders/bartender2_them.webp);}
+.bartender2.sad {content: url(bar/bartenders/bartender2_other.webp);}
+
+.bartender3 {content: url(bar/bartenders/bartender3_idle.webp);}
+.bartender3:hover {content: url(bar/bartenders/bartender3_hover.webp);}
+.bartender3.happy {content: url(bar/bartenders/bartender3_them.webp);}
+.bartender3.sad {content: url(bar/bartenders/bartender3_other.webp);}
