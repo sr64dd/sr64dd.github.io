@@ -59,7 +59,6 @@ var currentPlaylist = ""
 let viewerReady = false
 
 function onYouTubeIframeAPIReady() {
-    console.log("API READY");
     player = new YT.Player('ytPlayer', {
         width: 200,
         height: 200,
@@ -72,7 +71,6 @@ function onYouTubeIframeAPIReady() {
             'onStateChange': onPlayerStateChange
         }
     });
-    console.log("API DONE");
 }
 
 function onPlayerReady(event) {
