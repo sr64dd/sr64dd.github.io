@@ -56,7 +56,7 @@ function shuffle(array) {
 
 var player
 var currentPlaylist = ""
-let viewerReady = true
+let viewerReady = false
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytPlayer', {
@@ -131,6 +131,7 @@ function stopSong() {
         bartender2.className = "bartender2"
         bartender3.className = "bartender3"
         flavourText.innerText = "what's one more, huh?"
+        currentPlaylist = ""
         player.stopVideo()
     }
 }
@@ -166,6 +167,8 @@ const flavourAd = {
 }
 
 function advertise(tender) {
-    let chosenFlavour = Math.floor(Math.random() * 6)
-    flavourText.innerText = flavourAd[tender][chosenFlavour]
+    if (currentPlaylist != "" && viewerReady) {
+        let chosenFlavour = Math.floor(Math.random() * 6)
+        flavourText.innerText = flavourAd[tender][chosenFlavour]
+    }
 }
