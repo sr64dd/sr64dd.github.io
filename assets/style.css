@@ -323,3 +323,18 @@ a {
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 8px rgb(24, 0, 241);
 }
+
+.bartender1 {content: url(bar/bartenders/bartender1_idle.webp);}
+.bartender1:hover {content: url(bar/bartenders/bartender1_hover.webp);}
+.bartender1.happy {content: url(bar/bartenders/bartender1_them.webp);}
+.bartender1.sad {content: url(bar/bartenders/bartender1_other.webp);}
+
+.bartender2 {content: url(bar/bartenders/bartender2_idle.webp);}
+.bartender2:hover {content: url(bar/bartenders/bartender2_hover.webp);}
+.bartender2.happy {content: url(bar/bartenders/bartender2_them.webp);}
+.bartender2.sad {content: url(bar/bartenders/bartender2_other.webp);}
+
+.bartender3 {content: url(bar/bartenders/bartender3_idle.webp);}
+.bartender3:hover {content: url(bar/bartenders/bartender3_hover.webp);}
+.bartender3.happy {content: url(bar/bartenders/bartender3_them.webp);}
+.bartender3.sad {content: url(bar/bartenders/bartender3_other.webp);}
