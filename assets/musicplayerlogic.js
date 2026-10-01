@@ -66,7 +66,10 @@ function onPlayerReady(event) {
 
 function onPlayerStateChange(event) {
     if (event.data == YT.PlayerState.ENDED) {
-        currentSong++
+        if (currentSong == (musicPlaylists[currentPlaylist]).length) {
+            currentSong = 0
+        }
+        else {currentSong++}
         player.loadVideoById(musicPlaylists[currentPlaylist][currentSong])
     }
 }
@@ -78,7 +81,10 @@ function playMusic(playlist) {
 }
 
 function nextSong() {
-    currentSong++
+    if (currentSong == (musicPlaylists[currentPlaylist]).length) {
+        currentSong = 0
+    }
+    else {currentSong++}
     player.loadVideoById(musicPlaylists[currentPlaylist][currentSong])
 }
 
