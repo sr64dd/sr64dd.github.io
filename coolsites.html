@@ -51,15 +51,58 @@
                     <a href="https://spinebreaker.nekoweb.org/" title="Spine Breaker's Webpage">
                         <img src="https://spinebreaker.nekoweb.org/images/88x31_banner.gif">
                     </a>
-                    <img src="assets/eightyeightthirtyone/sweeet88x31.gif">
+                    <a href="https://unsweeetened.com/old-sweeet-com-3d-wallpapers/" title="Spine Breaker's Webpage">
+                        <img src="assets/eightyeightthirtyone/sweeet88x31.gif">
+                    </a>
                     <img src="https://88x31.nl/gifs/cogs.gif">
                 </div>
+            </div>
+            <br>
+            <div id="musicplayerbar">
+                <iframe id="ytPlayer" width="560" height="315" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin" origin="https://sr64dd.github.io"></iframe>
+                <button id="playButton" disabled onclick="playMusic()">play music</button>
             </div>
         </main>
     </div>
 </body>
 <script>
-    var safeMarquee = false
+
+var safeMarquee = false
+var currentSong = 0
+
+const musicPlaylist = [
+    "_WxXi7dvi4c",
+    "3f-jQxceV6o"
+]
+
+var player;
+
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('ytPlayer', {
+        playerVars: {
+        'playsinline': 1
+        },
+        events: {
+            'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    document.getElementById("playButton").disabled = false
+}
+
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.ENDED) {
+        currentSong++
+        player.loadVideoById(musicPlaylist[currentSong])
+    }
+}
+
+function playMusic() {
+    player.loadVideoById(musicPlaylist[0])
+}
 
 </script>
 <script src="assets/marqueelogic.js"></script>
