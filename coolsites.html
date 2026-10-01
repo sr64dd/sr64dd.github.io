@@ -11,16 +11,6 @@
         body {
             background-image: url(assets/backgrounds/bgcool.webp);
         }
-
-        #musicDrawer {
-            height: 0;
-            overflow: hidden;
-            transition: height 0.4s steps(6);
-        }
-
-        #musicDrawer.open {
-            height: 200px;
-        }
     </style>
 </head>
 <body>
@@ -69,8 +59,13 @@
             </div>
             <br>
             <div id="musicplayerbar">
-                <div id="musicDrawer">
-                    <div id="ytPlayer"></div>
+                <div id="bar" style="line-height: 0px;">
+                    <img src="assets/bar/bartemp.webp">
+                    <img class="nextsongbutton" style="position: absolute; top: 62px; left: 260px;" id="nextbutton" onclick="nextSong()" src="assets/bar/nextoff.webp" draggable="false">
+                    <img class="stopsongbutton" style="position: absolute; top: 62px; left: 330px;" id="stopbutton" onclick="stopSong()" src="assets/bar/stopoff.webp" draggable="false">
+                </div>
+                <div id="musicdrawer">
+                    <div id="ytPlayer" class="playerframe"></div>
                 </div>
                 <button id="playButton"  onclick="playMusic()">play music</button>
             </div>
