@@ -1,4 +1,5 @@
 let isFirstTime = true
+let marqueeTimer
 
 function startMarquee() {
     const messages = [
@@ -70,7 +71,7 @@ function startMarquee() {
         "Extra! Extra! More stuff to read has landed on the site! And don't worry. It's not educational ;)",
         "If you were to describe something that is empty, would you use baron, barron, baren, or barren?",
         "Now Boarding flights 9 to Arecaceby, 15 to Aerostruct.",
-        "Sign my guestbook!"
+        "Why not have a drink?"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {
@@ -95,8 +96,21 @@ function startMarquee() {
         marq1.style.setProperty("--end-x", `${-textWidth}px`);
         
         marq1.style.animation = `marquee-content ${duration}s linear forwards`;
-    })
+
+        clearTimeout(marqueeTimer);
+        marqueeTimer = setTimeout(() => {
+            console.log("MARQUEE TIMER FIRED");
+            if (!document.hidden) {
+                startMarquee();
+            }
+        }, duration * 1000 + 100);
+    });
 }
 
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+        startMarquee();
+    }
+});
+
 startMarquee();
-marq1.addEventListener("animationend", startMarquee);
