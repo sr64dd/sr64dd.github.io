@@ -41,6 +41,27 @@ var blogPosts = {
                         <br><br>So hopefully in the coming days, weeks, months, even years, this site will develop into something more than it is now. As of writing this I'm trying to make more animations. So far this site has three and they all feature Supreno, Jami and Martar, who are the sr64 mascots I guess. I'm making new characters for these newer animations. Also hopefully going to add sound.
                         <br><br>If I keep working at it, I might just get good at it.
                         <br><br>Thank you for reading. Have a great day :) `
+    },
+    3 : {
+        "title" : "03. Darkness fills where light leaves empty...",
+        "date" : "03/10/26",
+        "category" : "This Site + Ramblings",
+        "body" : `Avid readers, it is with great sorrow that I must inform you on the passing of the guestbook. Yes, it lasted exactly one blog post. 
+                        <br><br>I was so giddy last post in promoting it because I was very proud of it. But today I visited it again to find that literally everything broke. I don't know how, I don't know why, but I think I'll blame... politicians...
+                        <br><br>But honestly I can't feel too bad. It was kind of out of place given all of the customizable stuff. However, the guestbook will return, just much simpler. Because it doesn't matter if every comment has the data of a simulated person living inside of it or a AI continent thriving off of it. It's a guestbook first, not a glamour show.
+                        <br><br>I'm sorry, that one was rough. Call it post-site-feature-execution-whiplash.
+                        <br><br>But as I was deleting every trace of the guestbook something just didn't sit right with me. Why did the guestbook shit itself when I tested it both locally and on github and it worked fine?
+                        <br><br>I'm not one to believe in superstitions, so what I'm about to tell you is completely sincere and plausible. I believe there is a <red style="color: red;">demon</red> in my site. Yes, a <red style="color: red;">demon.</red> There's simply nothing else that could explain the mishaps of the guestbook than a being of pure evil infesting itself into my pure website.
+                        <br><br>As of writing it's exactly four weeks from Halloween, so how about I give you a scary fable to memorize before then. The guestbook was not the only victim of the <red style="color: red;">demon.</red>
+                        <br><br>The biggest problem with the guestbook was that submitting was bugged (or haunted, manipulated, take your pick). However a minor problem with the guestbook was that the preview icon for the message's background would not change no matter what. I could force the src in the console and it would not change. It's almost like what I was seeing wasn't the real pure preview. Almost like I was looking at a husk who's soul was sucked out of it.
+                        <br><br>I hate to be stereotypical, but that's textbook <red style="color: red;">demon</red> shenanigans.
+                        <br><br>How about this very blog? For a while it was petrified, unable to be manipulated by any action despite being active and functioning <i>in statu nascendi.</i> Could the <red style="color: red;">demon</red> be destroying my one method of communication? Is he stupid? Does it not know of life beyond the HTML? 
+                        <br><br>But that's not all. The marquees on this site are haunted too. I'd like to preface by saying that if the guestbook was like my son, the marquee would be my infinitely more successful son. It could start spewing slurs (due to <red style="color: red;">you know who</red>) and I would hesitate to kill it. But when you load a new page, do you notice that sometimes the marquee abruptly cuts off? Almost like the presence of my alias makes the <red style="color: red;">demon</red> quiver, making him twitch in anger and fear.
+                        <br><br>I know I control the site and so I probably have more power than the <red style="color: red;">demon</red>, but I can't risk losing my precious marquee. <red style="color: red;">Demon</red>, if you are reading this, I don't care if I am destined to not get the guestbook I desire, but lay one more finger on the marquee and I'll make this site a creepypasta. And not the liminal photo with contrast cranked up and spookie eyes kind.
+                        <br><br>But that's just superstition- I mean speculation. So if you see anything weird around here, you know who to blame.
+                        <br><br>Anyways, in case the guestbook doesn't come back, here are a collection of my favourite pins I made for it. Feel free to take them and give them a new home.
+                        <br><br><div style="text-align: center;"><img style="padding: 4px;" src="assets/guestbook/stickynotepinaero.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinbiohazard.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinbluescreen.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepincd.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinearth.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinfish.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinflower.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinmeta2.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinminimarq.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinmoon.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinsr64ddsprite.webp"><img style="padding: 4px;" src="assets/guestbook/stickynotepinwhiskey.webp"></div>
+                        <br>Now if you'll excuse me, I'll continue to fake-mourn the loss of the guestbook, and if the <red style="color: red;">demon</red> is willing to set our differences aside I'm comfortable with him fake-mouring with me.`
     }
 }
 
@@ -49,21 +70,18 @@ var tagcolours = {
     "Cool Web + This Site" : "aquamarine",
     "Cool Web" : "greenyellow",
     "This Site" : "aqua",
-    "Ramblings" : "purple"
+    "Ramblings" : "purple",
+    "This Site + Ramblings" : "rgb(255, 0, 149)"
 }
 
-const titleElem = document.getElementById("blogtitle")
-const bodyElem = document.getElementById("blogbody")
 var currentBlog = Object.keys(blogPosts).length - 1
 
 function changeBlog(blogNum) {
-    let blogTitle = blogPosts[blogNum].title
-    let blogBody = blogPosts[blogNum].body
-    let blogDate = blogPosts[blogNum].date
-    titleElem.innerHTML = blogTitle
-    bodyElem.innerHTML = blogBody
-    document.getElementById("date").innerHTML = blogDate
-    document.getElementById("tabtitle").innerHTML = "Newsletter - " + currentBlog + " - sr64dd"
+    currentBlog = blogNum
+    document.getElementById("blogtitle").innerHTML = blogPosts[currentBlog].title;
+    document.getElementById("blogbody").innerHTML = blogPosts[currentBlog].body;
+    document.getElementById("date").innerHTML = blogPosts[currentBlog].date;
+    document.getElementById("tabtitle").innerHTML = "Newsletter - " + currentBlog + " - sr64dd";
 }
 
 function incrementBlog(indexAdder) {
