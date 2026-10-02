@@ -5,7 +5,7 @@ let bartender2 = document.getElementById("playButton2")
 let bartender3 = document.getElementById("playButton3")
 const flavourText = document.getElementById("bardisplaytext")
 
-const musicPlaylists = {
+let musicPlaylists = {
     "chill" : [
         "AMnvQHD60Ek",
         "CFS8E-ccPAE",
@@ -55,7 +55,13 @@ const musicPlaylists = {
         "muIEJzymPCE",
         "7l3m44fAYAE",
         "oME6YGFLn_k",
-        "Wihi-H1Rivs"
+        "Wihi-H1Rivs",
+        "fhI2kO09syU",
+        "3UrBs9_qG7E",
+        "8KhS-QVFpcg",
+        "ibxHBY-MEGc",
+        "DmLRQryHkVA",
+        "ORU0K9ZxK_M"
     ],
     "reg" : [
         "saaCpdzZ6SM",
@@ -132,7 +138,36 @@ const musicPlaylists = {
         "eTaHk10gcOw",
         "-0srGzIW_5w",
         "yrD4yAozRTw",
-        "kj4K87jvvyI"
+        "kj4K87jvvyI",
+        "TQsKTuKQsoI",
+        "9L9XoO4m1uI",
+        "5Ed-h8u8a_k",
+        "zHQBlaYBUsE",
+        "EmTPg8ximPE",
+        "BZhhhl2tWNM",
+        "fLikBdrgDPg",
+        "RtDqbdW8RxI",
+        "WjUaB5A8qcA",
+        "0wv1eHq-VHY",
+        "b6Sw_HmQ8GU",
+        "hL3F_oXTb-Q",
+        "Wt2sWPIsKOY",
+        "u_pt3khMRFs",
+        "1j9DfYtJkgk",
+        "1FqLJzKllRI",
+        "fiD39jo5Yo4",
+        "ltxmyVTbKeQ",
+        "NcGyScT6kqQ",
+        "qY1RvCU0rII",
+        "VimNTQ6cU7s",
+        "n9DmdAwUbxc",
+        "wSMMz55AIcY",
+        "1ZfjB5P7RS0",
+        "HmoUSSVSV7I",
+        "XOI00jtYv2o",
+        "i_6Z1VouytE",
+        "xFV339D9SsY",
+        "0bPU4bdMlqM"
     ],
     "intense" : [
         "qffVd9KmGZo",
@@ -168,7 +203,37 @@ const musicPlaylists = {
         "QjcA2xSH25Y",
         "cgEifPjDS7E",
         "2hrFnkOcpbg",
-        "3pLdV2O6yiI"
+        "3pLdV2O6yiI",
+        "9NPv_ZsMgIg",
+        "440OMdo9MN8",
+        "-fgv66f6GK8"
+    ],
+    "all" : [
+        "qB1ucmJSgRE",
+        "zF47sDeRYRE",
+        "VHKP_OE5iY8",
+        "4mmn7siswJY",
+        "Gz0fAz9n_Os",
+        "peuTnilEv9g",
+        "8UrsaKcZHI0",
+        "vcaPiiFZu2o",
+        "-lRPEny5jug",
+        "aaHHR69CJx4",
+        "7HAJekLQyd0",
+        "JeEA8Na9av0",
+        "FY--gYPYJg0",
+        "J6O6SmmAdtk",
+        "N4ZwLkWrEnY",
+        "DFI6cV9slfI",
+        "M3tzlaXBRV8",
+        "xBRhIsJZ2eU",
+        "InHSKiHpmIY",
+        "gD_2Bhjj0Hw",
+        "vRHQqZAlHTs",
+        "M_POSjpOK6s",
+        "e3A_9-wxR2o",
+        "g5UdJn1-xFA",
+        "uD4S_F-pykg"
     ]
 }
 
@@ -195,6 +260,7 @@ shuffle(musicPlaylists["intense"])
 var player
 var currentPlaylist = ""
 let viewerReady = false
+let allPlaylistShuffled = false
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('ytPlayer', {
@@ -243,12 +309,27 @@ function playMusic(playlist) {
             bartender3.className = "bartender3 sad"
             
         }
-        else {
+        else if (currentPlaylist == "intense") {
             bartender1.className = "bartender1 sad"
             bartender2.className = "bartender2 sad"
             bartender3.className = "bartender3 happy"
         }
-        flavourText.innerText = "excellent choice!"
+        else {
+            bartender1.className = "bartender1 happy"
+            bartender2.className = "bartender2 happy"
+            bartender3.className = "bartender3 happy"
+            if (!allPlaylistShuffled) {
+                musicPlaylists["all"].push.apply(musicPlaylists["all"], musicPlaylists["chill"]);
+                musicPlaylists["all"].push.apply(musicPlaylists["all"], musicPlaylists["reg"]);
+                musicPlaylists["all"].push.apply(musicPlaylists["all"], musicPlaylists["intense"]);
+                shuffle(musicPlaylists["all"])
+                allPlaylistShuffled = true
+            }
+        }
+
+        if (currentPlaylist == "all") {flavourText.innerText = "daring, are we?"}
+        else {flavourText.innerText = "excellent choice!"}
+        
         player.loadVideoById(musicPlaylists[currentPlaylist][0])
     }
 }
@@ -306,6 +387,16 @@ const flavourAd = {
         "I'm here for the long haul!",
         "let's party!",
         "make me confused... please."
+    ],
+    4 : [
+        "gimme the mix!",
+        "how's a bit of everything?",
+        "I don't care! hit me!",
+        "surprise me!",
+        "what'd you recommend?",
+        "just something random thanks.",
+        "let's roll the dice!",
+        "I'll have what that guy had."
     ]
 }
 

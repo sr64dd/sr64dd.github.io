@@ -10,18 +10,19 @@ document.getElementById("sidebar").innerHTML = `<rbow class="rbow"><div class="l
 
 if (includeMusicPlayer) {
     document.getElementById("rightside").innerHTML += `<br>
-                <div id="musicplayerbar">
-                    <div id="bar" style="line-height: 0px;">
-                        <img src="assets/bar/bartemp.webp" draggable="false">
-                        <p id="bardisplaytext"></p>
-                        <img class="nextsongbutton" style="position: absolute; top: 62px; left: 260px;" id="nextbutton" onclick="nextSong()" src="assets/bar/nextoff.webp" draggable="false">
-                        <img class="stopsongbutton" style="position: absolute; top: 62px; left: 330px;" id="stopbutton" onclick="stopSong()" src="assets/bar/stopoff.webp" draggable="false">
-                        <img class="bartender1" id="playButton1" onclick="playMusic('reg')" onmouseover="advertise(1)" style="position: absolute; top: 1px; left: 25px;" src="assets/bar/bartenders/bartender1_idle.webp" draggable="false">
-                        <img class="bartender2" id="playButton2" onclick="playMusic('chill')" onmouseover="advertise(2)" style="position: absolute; top: 3px; left: 85px;" src="assets/bar/bartenders/bartender2_idle.webp" draggable="false">
-                        <img class="bartender3" id="playButton3" onclick="playMusic('intense')" onmouseover="advertise(3)" style="position: absolute; top: 2px; left: 155px;" src="assets/bar/bartenders/bartender3_idle.webp" draggable="false">
-                    </div>
-                    <div id="musicdrawer">
-                        <div id="ytPlayer" class="playerframe"></div>
-                    </div>
-                </div>`
+            <div id="musicplayerbar">
+                <div id="bar" style="line-height: 0px;">
+                    <img src="assets/bar/bartemp.webp" draggable="false">
+                    <p id="bardisplaytext"></p>
+                    <img class="nextsongbutton" style="position: absolute; top: 62px; left: 260px;" id="nextbutton" onclick="nextSong()" src="assets/bar/nextoff.webp" draggable="false">
+                    <img class="stopsongbutton" style="position: absolute; top: 62px; left: 330px;" id="stopbutton" onclick="stopSong()" src="assets/bar/stopoff.webp" draggable="false">
+                    <img class="bartender1" id="playButton1" onclick="playMusic('reg')" onmouseover="advertise(1)" style="position: absolute; top: 1px; left: 25px;" src="assets/bar/bartenders/bartender1_idle.webp" draggable="false">
+                    <img class="bartender2" id="playButton2" onclick="playMusic('chill')" onmouseover="advertise(2)" style="position: absolute; top: 3px; left: 85px;" src="assets/bar/bartenders/bartender2_idle.webp" draggable="false">
+                    <img class="bartender3" id="playButton3" onclick="playMusic('intense')" onmouseover="advertise(3)" style="position: absolute; top: 2px; left: 155px;" src="assets/bar/bartenders/bartender3_idle.webp" draggable="false">
+                    <img class="bartender4" id="playButtonALL" onclick="playMusic('all')" onmouseover="advertise(4)" style="position: absolute; top: 27px; left: 2px;" src="assets/bar/bartenders/bartender4_idle.webp" draggable="false">
+                </div>
+                <div id="musicdrawer">
+                    <div id="ytPlayer" class="playerframe"></div>
+                </div>
+            </div>`
 }

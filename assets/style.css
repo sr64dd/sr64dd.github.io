@@ -184,6 +184,7 @@ a {
 .rightside {
     width: 800px;
     filter: drop-shadow(8px 8px 18px black);
+    overflow: visible;
 }
 
 .marq {
@@ -338,3 +339,6 @@ a {
 .bartender3:hover {content: url(bar/bartenders/bartender3_hover.webp);}
 .bartender3.happy {content: url(bar/bartenders/bartender3_them.webp);}
 .bartender3.sad {content: url(bar/bartenders/bartender3_other.webp);}
+
+.bartender4 {content: url(bar/bartenders/bartender4_idle.webp);}
+.bartender4:hover {content: url(bar/bartenders/bartender4_hover.webp);}
