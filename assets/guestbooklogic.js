@@ -66,9 +66,9 @@ document.getElementById('guestbookForm').addEventListener('submit', function(e) 
     statusText.style.display = "block";
     statusText.innerText = "Saving your entry...";
 
-    const name = encodeURIComponent(document.getElementById('name').value);
+    const name = encodeURIComponent((document.getElementById('name').value).slice(0, 30));
     const nameColour = encodeURIComponent(document.getElementById('nameColour').value);
-    const comment = encodeURIComponent(document.getElementById('comment').value);
+    const comment = encodeURIComponent((document.getElementById('comment').value).slice(0, 255));
     const pin = encodeURIComponent(document.getElementById('pinType').value);
     let commentID = localStorage.getItem("commentID");
     let submissionUrl = ""
