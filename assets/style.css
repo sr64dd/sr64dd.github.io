@@ -232,6 +232,7 @@ a {
     padding: 12px;
     background-image: url(backgrounds/bodybg.webp);
     border-radius: 16px;
+    min-height: 450px;
 }
 
 .contentnopadding {
