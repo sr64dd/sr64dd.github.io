@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/altpagestyles.css">
+    <title>Guestbook - sr64dd</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <style>
+        body {
+            background-image: url(assets/backgrounds/bgguestbook.webp);
+            background-repeat: repeat;
+            animation-duration: 12s ;
+            animation-name: backgroundscrolling ;
+            animation-timing-function: linear ;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes backgroundscrolling {
+            0% {
+                background-position: 0px 0px;
+            }
+            100% {
+                background-position: 400px 400px;
+            }
+        }
+
+        .commentContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 730px;
+        }
+
+        .comment-card {
+            padding: 8px;
+            flex: 0 1 auto;
+            width: fit-content;
+        }
+
+        .commentNote {
+            position: relative;
+            width: fit-content;
+            max-width: 730px;
+            background-color: #FFCC8D;
+            border: 12px solid transparent;
+            border-image: url(assets/guestbook/stickynote.webp) 12;
+            border-radius: 24px;
+            text-shadow: none;
+            font-weight: bold;
+            color: rgb(27, 27, 27);
+        }
+        
+        .commentName {
+            font-size: 20px;
+            font-family: cursivepixel;
+        }
+
+        .commentDesc {
+            line-height: normal;
+            font-size: 13px;
+        }
+
+        .commentDate {
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        .commentPin {
+            position: absolute;
+            right: -20px;
+            top: -34px;
+            z-index: 10;
+        }
+
+        .invertedsticky {
+            width: 715px;
+            text-align: center;
+            background-color: #013473;
+            border: 12px solid transparent;
+            border-image: url(assets/guestbook/stickynoteinverted.webp) 12;
+            border-radius: 24px;
+            font-weight: bold;
+        }
+
+        .comment-form {
+            background-image: url(assets/guestbook/guestbookformbgnew.webp);
+            width: 642px;
+            height: 240px;
+            position: relative;
+            left: 70px;
+            text-align: center;
+        }
+
+        .formName {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 30px;
+            left: 48px;
+            font-size: 24px;
+            font-family: cursivepixel;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .formComment {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 93px;
+            left: 35px;
+            font-size: 13px;
+            font-weight: bold;
+            width: 230px;
+            height: 120px;
+            line-height: 14px;
+            resize: none;
+        }
+
+        .formNameColour {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 73px;
+            right: 170px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .formPin {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            height: 25px;
+            font-size: 17px;
+            font-weight: bold;
+            color: #B9B1A2;
+            font-family: cursivepixel;
+            text-align: right;
+        }
+
+        .previewPin {
+            border: none;
+            background: none;
+            position: absolute;
+            top: 140px;
+            right: 100px;
+        }
+
+        .signGuestbookButton {
+            content: url(assets/guestbook/submitsignature.webp);
+        }
+        .signGuestbookButton:hover {content: url(assets/guestbook/submitsignatureon.webp);}
+
+        .submitButton {
+            border: none;
+            background: none;
+            position: absolute;
+            bottom: 10px;
+            right: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page" class="page">
+        <div id="leftside">
+            <div id="logo" class="logo">
+                <img src="assets/images/sr64decal.webp" width="240px" height="240px" draggable="false">
+            </div>
+            <aside id="sidebar" class="sidebar"></aside>
+        </div>
+        <main id="rightside" class="rightside">
+            <div id="marquee" class="marq marqguestbook">
+                <div id="marq1" class="marquee__item">
+                </div>
+            </div>
+            <div id="content" class="content contentguestbook">
+                <div id="invertedsticky" class="invertedsticky">
+                    Click here to sign my guestbook!
+                </div>
+                <div class="comment-form">
+                    <form id="guestbookForm">                  
+                            <input type="text" id="name" class="formName"  maxlength="30" required placeholder="Your name or alias">
+                            <textarea id="comment" class="formComment" rows="4" maxlength="255" required placeholder="Type your comment here!" required placeholder="Leave a message!"></textarea>
+                            <input type="color" id="nameColour" class="formNameColour" value="rgb(27,27,27)">
+                            <select class="formPin" id="pinType" onchange="updatePreviewPin()">
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="purple">Purple</option>
+                                <option value="aero">Aero SR64DD</option>
+                                <option value="antline">Antline</option>
+                                <option value="biohazard">Biohazard</option>
+                                <option value="bluescreen">Bluescreen</option>
+                                <option value="booth">Booth</option>
+                                <option value="box">Box Bot</option>
+                                <option value="bubbles">Bubbles</option>
+                                <option value="cd">CD</option>
+                                <option value="crab">Crab</option>
+                                <option value="ctc">CTC</option>
+                                <option value="dorfic">Dorfic SR64DD</option>
+                                <option value="fish">Fish</option>
+                                <option value="flower">Flower</option>
+                                <option value="gb">Gamechild</option>
+                                <option value="installer">Installer</option>
+                                <option value="jami">Jami</option>
+                                <option value="ladybug">Ladybug</option>
+                                <option value="martar">Martar</option>
+                                <option value="meta1">Metaballs 1</option>
+                                <option value="meta2">Metaballs 2</option>
+                                <option value="minianim">Mini Anim Player</option>
+                                <option value="minimarq">Mini Marquee</option>
+                                <option value="moon">Moon</option>
+                                <option value="moonfloat">Moon Float</option>
+                                <option value="nuke">Nuke</option>
+                                <option value="paperclip">Paperclip</option>
+                                <option value="plant">Plant</option>
+                                <option value="slime">Slime</option>
+                                <option value="smiley">Smiley</option>
+                                <option value="sr64dd">Silver SR64DD</option>
+                                <option value="sr64ddsprite">Sprite SR64DD</option>
+                                <option value="supreno">Supreno</option>
+                                <option value="thumbtack">Thumbtack</option>
+                                <option value="whiskey">Whiskey</option>
+                                <option value="3ds">3DS</option>
+                            </select>
+                            <img id="previewingPin" class="previewPin" src="assets/guestbook/stickynotepinred.webp">
+                            <button class="submitButton" type="submit" class="btn-grad" id="submitBtn"><img class="signGuestbookButton"></button>
+                            <p id="formStatus"></p>
+                    </form>
+                </div><br>
+                <div id="commentsContainer" class="commentContainer">Loading Guestbook...</div>
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+    var safeMarquee = false
+    var includeMusicPlayer = true
+
+    function updatePreviewPin() {
+        const previewPin = document.getElementById("previewingPin")
+        previewPin.src = "assets/guestbook/stickynotepin"+document.getElementById("pinType").value+".webp"
+    }
+</script>
+<script src="assets/marqueelogic.js"></script>
+<script src="assets/sidebarcomponent.js"></script>
+<script src="assets/guestbooklogic.js"></script>
+<script src="assets/musicplayerlogic.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+</html>
