@@ -80,6 +80,24 @@ var blogPosts = {
                         <br><br><div style="text-align: center;"><img src="assets/images/tally/4fugly.webp"></div>
                         <br><br>Thank you for reading! I think the guestbook should be working now. The <red style="color: red;">demon</red> is a lazy sod, but I'm sure he'll get right on destroying the new guestbook too.
                         <br><br>Peace!`
+    },
+    5 : {
+        "title" : "05. Super Makeover 64 DD?",
+        "date" : "06/10/26",
+        "category" : "This Site",
+        "body" : `Seeing all of these cool sites on the internet has had me thinking about my site. I love the look of it, but other people have created awesome looks for their sites, and I can't help but think I can push my own site's looks even further.
+                        <br><br>I think I've struck a good balance between a retro detailed look and a clean readable look. The whole "mini content box" thing is meant to look like Bryce's labs, specifically the CTC page was meant to look like the Materials Lab. However, I don't think I've balanced a good line between overdetailed and blandness. Most of this site's pages look pretty samey, and some even look bland. That's why I try to make the backgrounds as wacky as I can, but more can be done.
+                        <br><br>Features like the two icons below the sidebar and the actual bar below the page also help spruce up pages, though I notice people tend to have more than three little unrelated doodads next to their page.
+                        <br><br>But I say all of this is blasphemy! My site is my site! I'll redesign it how I want! And I think I have a pretty good idea.
+                        <br><br>First, ditch the marquee. Ever since "What's the derivative of 64/3 * d^3?" the marquee's been reserved to jabs at this website that no one will understand or advertisements for minute long interactables. Plus it's about a 3 on the chic scale, and unfortunately that scale is out of 100.
+                        <br><br>Next is the sidebar. It's good but navigation being on the side is about as recent as traffic moving forward on the right side; never, unless you're american, or afghan, or brazilian, or canadian, or french, or german. My point being whatever was on the side is going on the top. The very top, that is.
+                        <br><br>Which brings me to my next change. The little window border whatever is no more. It really only exists to fit the marquee so it can go with it... to HELL.
+                        <br><br>Finally, the colours. Right now the site is a little overstimulating with all of its colours (I mean, the CTC logo has 14,588 colours! That's dare I say too much). So this site will from here on only have three colours. White and Black, though muted versions of each, and Red, specifically #ff0000, since it's the colour of Supreno and this little hint of what once was is enough to show I still care.
+                        <br><br>Here's a little mockup of what the site will look like in the near future!
+                        <br><br><div style="text-align: center;"><img src="assets/images/tally/absolutelyadhorent.webp" width="200px" height="150px"></div>
+                        <br>Pretty cool, huh? It's brimming with charm! It has so much charm, we might have to do something about it...
+                        <br><br>Anyways, I suppose for the mean time the site can keep its current look. Since this redesign will take a long while (ETA not decided yet) expect more doodads and thingamabobs on the site! As of writing this I'm also writing and creating images for the character bio page. After that, and maybe a few more Bryce presets and 3DS themes, this site will be constantly getting new things to mess around with! Or maybe I'll leave the site alone and actually get good at animating. Depends if the "should" side of my mind beats the "want."
+                        <br><br>Thanks for reading!`
     }
 }
 

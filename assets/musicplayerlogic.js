@@ -168,7 +168,8 @@ let musicPlaylists = {
         "i_6Z1VouytE",
         "xFV339D9SsY",
         "0bPU4bdMlqM",
-        "h6YlKqYp3xI"
+        "h6YlKqYp3xI",
+        "n6daacTPEE0"
     ],
     "intense" : [
         "qffVd9KmGZo",
