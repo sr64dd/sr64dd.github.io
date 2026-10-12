@@ -98,6 +98,27 @@ var blogPosts = {
                         <br>Pretty cool, huh? It's brimming with charm! It has so much charm, we might have to do something about it...
                         <br><br>Anyways, I suppose for the mean time the site can keep its current look. Since this redesign will take a long while (ETA not decided yet) expect more doodads and thingamabobs on the site! As of writing this I'm also writing and creating images for the character bio page. After that, and maybe a few more Bryce presets and 3DS themes, this site will be constantly getting new things to mess around with! Or maybe I'll leave the site alone and actually get good at animating. Depends if the "should" side of my mind beats the "want."
                         <br><br>Thanks for reading!`
+    },
+    6 : {
+        "title" : "06. Super good at doing nothing 64.",
+        "date" : "12/10/26",
+        "category" : "This Site + Ramblings",
+        "body" : `Not much has happened since the last newsletter, hopefully that sets the tone for the rest of this newsletter (it's just me complaining until the end). Or blog, because that's pretty much what it is at this point.
+                        <br><br>Speaking of last newsletter, I do actually plan to change the visuals of this site. The idea came when I thought of adding a page dedicated to my favourite things. Music, Games, TV, even other stuff like Paint.net plugins (something I could talk about for ages). But I thought something that personal looking like the rest of the website would be a shame.
+                        <br><br>Originally my idea was to make the page a dial with individual topics appearing in a circle. You'd click on one and the relevant info on that topic would appear below. It would still be inline with the rest of the site, but all my ideas for the actual visuals were intricate machinery. Not exactly the lightest visual look.
+                        <br><br>At the same time I was thinking about this I was making the Character Bios page. I actually had a pretty cool design for the backgrounds but it still looked really bland and not very personal, something I definitely wouldn't want for a characters page.
+                        <br><br>But then I had the idea to make the favourites page a supermarket where you can pick up different items and read about them. The whole page would have to be filled with images but it would be awesome, if not a scaling nightmare. But if all the pages on the site were identical but one, it would be very jarring.
+                        <br><br>So it's all or nothing. Very dramatic, I know. 
+                        <br><br>But there's been another grander issue. Animations! I'm supposed to be getting better at animations but I haven't made a damn thing! I think the issue is that I keep trying to make stories or shorts when I really should be making actions, simple stuff like running, dialogue, expressions etc. 
+                        <br><br>I don't really do stuff I'm not good at. I like making Bryce renders because I'm good at it. I like adding stuff to this website because I'm good enough to serve this site's needs. I don't really make music because I'm not the best at it. And I certainly don't make animations because I'm ass at it.
+                        <br><br>The problem is the stuff I'm not good at is the stuff I'm actually interested in. Bryce renders are cool but I've about had my fun with it, at least for now. But I do want to make animations and music.
+                        <br><br>So hopefully me gamifying this site can help me get better at animating. If I can make five animations of just whatever then I'll add some more stuff to the site. I've gotten plenty of ideas for 3DS themes like Jamiroquai's <i>Your Window It's a Crazy Television</i> and Yes songs. I also was thinking of making more stuff for CTC. Right now it's good for beginners but if you're not a beginner you only really get merit from the latter half of the book. So something more concise could be better.
+                        <br><br>If I can make ten then I'll start on something bigger for the site, which will either be games or the redesign mentioned above. I know this idea is kind of stupid but hopefully it'll get me to actually do stuff. I'm disciplined enough that I wouldn't go against the goals (or at least I hope I am).
+                        <br><br>Also, the Character Bios page will be in a perpetual WIP stage since I'll redesign it with the rest of the site. Here's the draft for the exerpt about Supreno:
+                        <br><br><div style="text-align: center;"><img src="assets/images/tally/suprenoexerpt.webp"></div> 
+                        <br><br>As you can see, the exerpt by itself looks pretty cool, though a page filled with the exact same looking thing copy and pasted isn't very distinct. Speaking of distinct, I'll likely change the CTC page the least or at least change it to something that isn't very obbrasive or taxxing on a computer to run.
+                        <br><br>Thanks for reading my nutjob ramblings! Hopefully this new post will be delivered via Git. I've been uploading new files to the site using Github on web and the process is extremely slow and annoying. The absurb amount of commits on my Github account are simply a result of having to do a new push for every directory that gets changed. Git should be much faster.
+                        <br><br>CYA!`
     }
 }
 
@@ -107,7 +128,8 @@ var tagcolours = {
     "Cool Web" : "greenyellow",
     "This Site" : "aqua",
     "Ramblings" : "purple",
-    "This Site + Ramblings" : "rgb(255, 0, 149)"
+    "This Site + Ramblings" : "rgb(255, 0, 149)",
+    "Smorgasbord" : "orange"
 }
 
 var currentBlog = Object.keys(blogPosts).length - 1

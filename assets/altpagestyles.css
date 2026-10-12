@@ -171,6 +171,19 @@
     text-shadow: 0px 0px 8px rgb(176, 65, 180);
 }
 
+/* Character Bios */
+.contentaero {
+    border-image: url(backgrounds/border3aero.webp) 16;
+    background-image: url(backgrounds/bodybgaero.webp);
+}
+
+.marqaero {
+    border-image: url(backgrounds/border4aero.webp) 16;
+    background-image: url(backgrounds/marqueeaero.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #ff0202;
+}
+
 /* --= Hyperlink Styles =-- */
 .texta:link {
     color: rgb(180, 180, 255);

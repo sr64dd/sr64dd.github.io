@@ -1,6 +1,6 @@
 @font-face {
     font-family: helvNeue;
-    src: url('fonts/HelveticaNeueLight.otf');
+    src: url('fonts/InterDisplay-Regular.otf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: helvNeue;
-    src: url('fonts/HelveticaNeueMedium.otf');
+    src: url('fonts/InterDisplay-SemiBold.otf');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
