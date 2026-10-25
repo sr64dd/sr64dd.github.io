@@ -38,6 +38,30 @@
             left: 8px;
             text-shadow: 0px 0px 8px #0011ff;
         }
+
+        #tooltip {
+            position: fixed;
+            background-image: linear-gradient(#05553a,#064630,#053827,#03291c);
+            border: 2px solid rgb(255, 255, 255);
+            padding: 7px;
+            width: fit-content;
+            display: none;
+            align-items: flex-start;
+            gap: 10px;
+            pointer-events: none;
+            z-index: 1000;
+            font-size: 12px;
+        }
+
+        #tooltip div {
+            flex: 1;
+            min-width: 0;
+        }
+
+        #tooltip p {
+            margin: 5px 0 0;
+            line-height: 1.3;
+        }
     </style>
 </head>
 <body>
@@ -79,27 +103,36 @@
 
                 <!-- Uniques -->
                 <div style="font-size: 20px; padding-top: 10px;"><b>Unique Animations</b></div>
-                <div>These are animations with unique characters that don't use audio that isn't mine and aren't part of an episodic ongoing series. So pretty much, the opposite of the below sections.</div>
+                <div>These are animations with unique characters that don't use audio that isn't mine and aren't part of an episodic ongoing series. So pretty much, the opposite of the below sections.</div><br>
                 
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/droolbumper.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                    <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="bumper" src="assets/icons/bumperanimation.webp" width="16px" height="16px">
+                    <a style="padding-left:8px;" class="texta videolink">Drool Bumper</a>
+                </div>
+
                 <!-- Repeat Chars -->
                 <br><div style="font-size: 20px; padding-top: 10px;"><b>Animations with Repeat Characters</b></div>
                 <div>These are short animations with characters which I guess are part of the sr64dd 'branding,' specifically Supreno, Jami, and Martar, but also others.</div><br>
                 
                 <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
-                    <img src="assets/icons/video.webp" width="16px" height="16px">
-                    <img src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Materials Preset Promo</a>
                 </div>
 
                 <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
-                    <img src="assets/icons/video.webp" width="16px" height="16px" >
-                    <img src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Painting at the Beach</a>
                 </div>
 
                 <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/subwaystaredown.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
-                    <img src="assets/icons/video.webp" width="16px" height="16px" >
-                    <img src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
+                    <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Supreno's Subway Staredown</a>
                 </div>
 
@@ -113,10 +146,15 @@
 
                 <!-- No animations down here -->
                 <br><br><div style="font-size: 20px; padding-top: 10px;"><i>A Little about the Television</i></div>
-                <div>You may be wondering what the 'tele' loop option is on the media player. What it's meant to do is play a random video after the previous one finishes. You know, automated entertainment! Well, it only really works when there's a bunch of different videos, so until then it's kinda useless.</div>
-
+                <div>You may be wondering what the 'tele' loop option is on the media player. What it's meant to do is play a random video after the previous one finishes. You know, automated entertainment! Well, it only really works when there's a bunch of different videos, so until then it's kinda useless. Also the rotation won't include anything that is a demo <img class="tooltip-link" data-description="demo" src="assets/icons/demoanimation.webp" width="16px" height="16px">.</div>
             </div>
         </main>
+    </div>
+    <div id="tooltip">
+        <img id="tooltip-image" src="" alt="">
+        <div>
+            <p id="tooltip-description"></p>
+        </div>
     </div>
 </body>
 
@@ -127,11 +165,25 @@
     var animationList = [
         "https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm",
         "https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm",
-        "https://file.garden/aqpxu2Xqr5_e-KgS/subwaystaredown.webm"
+        "https://file.garden/aqpxu2Xqr5_e-KgS/subwaystaredown.webm",
+        "https://file.garden/aqpxu2Xqr5_e-KgS/droolbumper.webm"
     ]
 </script>
+
 <script src="assets/marqueelogic.js"></script>
+<script src="assets/popup.js"></script>
 <script src="assets/videoplayerlogic.js"></script>
 <script src="assets/sidebarcomponent.js"></script>
+
+<!--
+    ALWAYS DISPLAY INDICATORS IN THIS ORDER
+    <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="series" src="assets/icons/seriesanimation.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="bumper" src="assets/icons/bumperanimation.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="demo" src="assets/icons/demoanimation.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="tiny" src="assets/icons/tinyanimation.webp" width="16px" height="16px">
+    <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
+-->
 
 </html>
