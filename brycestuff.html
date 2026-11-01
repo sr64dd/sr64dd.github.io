@@ -167,26 +167,19 @@
 </body>
 <script>
     var safeMarquee = false
-    var includeMusicPlayer = true
-    
-    const flipButton = document.getElementById("fliporder")
-    const listOfPacks = document.getElementById("downloadableslist")
 
     function flipOrder() {
-        if (flipButton.innerText == "🠟 Ordered by Newest 🠟") {
-            flipButton.innerText = "🠝 Ordered by Oldest 🠝"
-            listOfPacks.style.flexDirection = "column"
+        if (document.getElementById("fliporder").innerText == "🠟 Ordered by Newest 🠟") {
+            document.getElementById("fliporder").innerText = "🠝 Ordered by Oldest 🠝"
+            document.getElementById("downloadableslist").style.flexDirection = "column"
         }
         else {
-            flipButton.innerText = "🠟 Ordered by Newest 🠟"
-            listOfPacks.style.flexDirection = "column-reverse"
+            document.getElementById("fliporder").innerText = "🠟 Ordered by Newest 🠟"
+            document.getElementById("downloadableslist").style.flexDirection = "column-reverse"
         }
     }
 </script>
 <script src="assets/marqueelogic.js"></script>
 <script src="assets/popup.js"></script>
 <script src="assets/sidebarcomponent.js"></script>
-<script src="assets/musicplayerlogic.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-
 </html>

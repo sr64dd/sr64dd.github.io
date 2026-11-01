@@ -158,7 +158,33 @@ var blogPosts = {
                         <br><br>I was thinking on whether to include this in her character bio. It's a bit of a quirky fact, but it's also kind of cynical. "My superpower is that I can drink a lot" isn't very wholesome chungus as it were.
                         <br><br>I decided to exclude it since it was a pretty jarring bit of info, plus I'd already written a lot for her. But in the end, as mentioned in the last post, the character bio page comes out when the website gets redesigned. So it was all for not! Trivial things should not eat away at your mind. Sometimes a spontaneous decision that gets things moving is better than being halted indefinitely due to being cursed by the debater spirit within you.
                         <br><br>Thanks for reading! If you actually did read all of this, first of all you're only 4 more smorgasbords away from earning yourself a nifty little prize! And secondly I am truly sorry.`
-    }
+    },
+    8 : {
+        "title" : "08. Software of the Year: What?",
+        "date" : "01/11/26",
+        "category" : "Ramblings",
+        "body" : `For those who have boarded international flights before, has it ever occured to you that the nature of the screens on the back of the plane's seats are a bit mysterious?
+                        <br><br>You'd think the obvious thing for them to do would be to give the screens some windows os, lock them in a software, and be on their way. But what is that software? Because its very nature is so, so strange.
+                        <br><br>Navigating the thing is laggy, only smooth in very select menus. Yet somehow they manage to run games on the screen, ranging from lost media candidates to picks you wouldn't believe are on a plane. On one flight the screen had Peggle on it. <i>Peggle.</i> And it was right next to Turb The Miner 4 or something like that. I forgot, but can you really blame me?
+                        <br><br>I don't know why they have to be so slow, but I do remember on one flight that the company responsible for some of the games was also the one responsible for the screen - maybe? I'm not one to check the screen often, I just leave it on the cool map - but maybe that has something to do with it.
+                        <br><br>But about that cool map with the plane. I don't know why but staring at the slides slowly transitioning in complete muffled silence is an experience I like very much. It almost makes up for the other shit you have to deal with on a plane. I've made my own mockup here in case you don't get what I mean. I don't actually remember when I made these but they exist I guess.
+                        <br><br><div style="text-align: center;">
+                            <video autoplay loop muted playsinline>
+                                <source src="assets/images/tally/planescreen.webm" type="video/webm">
+                            </video>
+                        </div> 
+                        <br><br>Really gets you wondering who was actually responsible for the design, or the idea in general? The slideshow is supposedly called "Airshow" but searching that up only brings up jet airshows.
+                        <br><br>There's other technologies that I've been curious about. Some stores still use those pixelated marquee signs that can only display like five unique colours. There was one I noticed that had some cool bubble effect, it looked really primitive but it was also good-looking. It looks really cheap and retro but I think that adds to its charm.
+                        <br><br><div style="text-align: center;"><img src="assets/images/tally/ledsign.webp"></div>
+                        <br><br>That MUST be some sort of preset, or otherwise the laundromat owner might just be a cracked coder (or an LED light specialist, almost as rare as a brown specialist or a scrollbar specialist).
+                        <br><br>Yikes... that one was rough, huh? But I'm breaking the fourth, fifth, and a potential sixth wall so it's funny again.
+                        <br><br>I guess that's all I want to say. I'm sure there's other really niche software that I can contemplate over but who really cares? By 2050, there'll be so much niche, that the niche will become mainstream, and there will be no more niche.
+                        <br><br>Feel free to copy that and spread it around. It's a once-in-a-lifetime-sentence.
+                        <br><br>Well, thanks for reading this mini rambling sesh. Right now I've been working on some animations, namely the Drool and Stroll Bumpers. Drool is probably my favourite thing I've created, plus it's my first 3D animation! I like Stroll as well, but it's less of a bit and more of a practice.
+                        <br><br>But this "5 animations before I can add to the site" challenge is taking a toll on me. I though of a way cooler animations page that has each animation in its own DVD series box set, looking like a much more modern menu than just dot points.
+                        <br><br>Alas, that must wait. And for reading this far you are now a participant in my Airplane Shaped Marquee Screen Sign, a new invention of mine which I created the config program for in 1972!
+                        <br><br>Sea ya!`
+    },
 }
 
 var tagcolours = {
