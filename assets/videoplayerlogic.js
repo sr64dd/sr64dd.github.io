@@ -23,11 +23,17 @@ function shuffle(array) {
 shuffle(animationList)
 var currentVideo = -1
 
-function changeVid(newSRC, mediaButton) {
+function changeVid(newSRC, mediaName) {
     telePlayer.muted = false
     telePlayer.src = newSRC
-    var mediaName = mediaButton.textContent
-    teleNameBar.innerHTML = "‣ " + mediaName + " ‣"
+    let fullname = "‣ " + mediaName + " ‣"
+    if (fullname.length < 32) {
+        teleNameBar.innerHTML = "‣ " + mediaName + " ‣"
+    }
+    else {
+        teleNameBar.innerHTML = fullname.substring(0,29) + "..."  + " ‣"
+    }
+
     pauseButton.src = "assets/tele/controls/telepause.webp"
 }
 

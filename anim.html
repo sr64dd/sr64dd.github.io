@@ -92,7 +92,7 @@
                             <img id="playpausebutton" onclick="playpauseVid()" src="assets/tele/controls/teleplay.webp" width="32px" height="24px" draggable="false">
                             <img id="fastfbutton" onclick="skipVid(5)" src="assets/tele/controls/telefastf.webp" width="32px" height="24px" draggable="false">
                             <img id="looptoggle" onclick="loopVid()" src="assets/tele/controls/teleloopoff.webp" width="64px" height="24px" draggable="false">
-                            <div style="position: relative;">
+                            <div style="position: relative; overflow: hidden;">
                                 <img onclick="musicToggle()" src="assets/tele/controls/telenamebar.webp" width="316px" height="24px" draggable="false" >
                                 <p id="telenamebar" class="telenamebar">select a media...</p>
                             </div>
@@ -105,19 +105,19 @@
                 <div style="font-size: 20px; padding-top: 10px;"><b>Unique Animations</b></div>
                 <div>These are animations with unique characters that don't use audio that isn't mine and aren't part of an episodic ongoing series. So pretty much, the opposite of the below sections.</div><br>
                 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/droolbumper.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/droolbumper.webm", "Drool Bumper")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="bumper" src="assets/icons/bumperanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Drool Bumper</a>
                 </div>
 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/stroll.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/stroll.webm", "Stroll Bumper")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="bumper" src="assets/icons/bumperanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Stroll Bumper</a>
                 </div>
 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/weather.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/weather.webm", "Weather Program Broadcast 62/02/1107")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="meta" src="assets/icons/meta.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Weather Program Broadcast 62/02/1107</a>
@@ -127,21 +127,21 @@
                 <br><div style="font-size: 20px; padding-top: 10px;"><b>Animations with Repeat Characters</b></div>
                 <div>These are short animations with characters which I guess are part of the sr64dd 'branding,' specifically Supreno, Jami, and Martar, but also others.</div><br>
                 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/promotrim.webm", "Materials Preset Promo")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Materials Preset Promo</a>
                 </div>
 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/beach.webm", "Painting at the Beach")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">Painting at the Beach</a>
                 </div>
 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/subwaystaredown.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/subwaystaredown.webm", "Suprenos Subway Staredown")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="noaudio" src="assets/icons/noaudio.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="sjm" src="assets/icons/sjmanimation.webp" width="16px" height="16px">
@@ -152,7 +152,7 @@
                 <br><div style="font-size: 20px; padding-top: 10px;"><b>Animations based on other Audio</b></div>
                 <div>These are short animations that use audio clips that I think are funny or cool :D</div><br>
 
-                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/seratedknife.webm", this)' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
+                <div onclick='changeVid("https://file.garden/aqpxu2Xqr5_e-KgS/seratedknife.webm", "6 Serated Knife")' style="display: flex; padding-left: 10px; color:rgb(255, 251, 196) ;">
                     <img class="tooltip-link" data-description="video" src="assets/icons/video.webp" width="16px" height="16px">
                     <img class="tooltip-link" data-description="tiny" src="assets/icons/tinyanimation.webp" width="16px" height="16px">
                     <a style="padding-left:8px;" class="texta videolink">6 Serated Knife </a><a class="texta" href="https://www.youtube.com/watch?v=FQeq3OSB4gM&t=422s"><i style="font-size: 10px; padding-left: 6px;">(audio from this)</i></a>
