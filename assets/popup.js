@@ -29,6 +29,9 @@ document.querySelectorAll(".tooltip-link").forEach(link => {
             case "bumper":
                 tooltipDescription.textContent = "Bumper/Transitional";
                 break;
+            case "meta":
+                tooltipDescription.textContent = "Meta (Ad/Tv Program)";
+                break;
             default:
                 tooltipDescription.textContent = datadesc;
                 break;
