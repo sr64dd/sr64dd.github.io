@@ -185,6 +185,25 @@ var blogPosts = {
                         <br><br>Alas, that must wait. And for reading this far you are now a participant in my Airplane Shaped Marquee Screen Sign, a new invention of mine which I created the config program for in 1972!
                         <br><br>Sea ya!`
     },
+    9 : {
+        "title" : "09. I think we have a winner!",
+        "date" : "08/11/26",
+        "category" : "This Site",
+        "body" : `For a while now I've been pondering how I should redesign this site mainly because I want to give it a lot more personality than it has now, but also because I've been inspired by seeing other people's cool sites. But after all of this thinking, I think I've come up with a pretty good solution.
+                        <br><br>Two sites! Allow me to elaborate.
+                        <br><br>My biggest problem with my site at the time was that it looks bland, but honestly I think it's still pretty charming while remaining simple. It's not exactly a clustered mess but it also isn't void of any details.
+                        <br><br>So I'm gonna keep the current web layout, but there's another issue that needs to be addressed.
+                        <br><br>My monitor's resolution is 1600x900 and I've been designing the website with that in mind. I realised that this could make the page be too big for smaller resolutions, so I tested and found that it's good for resolutions above 1280 px in width, though even then it still looks clustered.
+                        <br><br>The need for a small screen compatible site layout combined with the urge to make a more detailed and cosy site brings us to the second site. Pretty much each page will have a style in this current version and a more compact version. They'll contain the same content, they'll just look different (I was thinking of giving the compact design a pixel art look!) and suit better for different resolutions.
+                        <br><br>Of course, the issue this presents is that now I have to not only make a new page from scratch, I then need to pretty much duplicate every single page (which as of writing is 15). This is obviously super slow and tedious, plus if I ever want to change something I'll need to change it a minimum of 15 times.
+                        <br><br>So now I've got myself exploring node.js and Eleventy to find a solution. Even if this site looks impressive somehow I am in no way a HTML savvy person. I've pretty much been riffing off of the code of others for a lot of stuff, namely the marquee, music player, and guestbook. So actually figuring out this shit is probably going to be a headache.
+                        <br><br>Fortunately, I've got 6 animations left until I need to worry about this. As of writing I've added 2 more. 6 Serated Knife was honestly funnier the first time I heard it, it kind of wore off halfway through making it. Though it was good lipsync practice for what it's worth.
+                        <br><br>The other one is a weather channel mockup thing, and I think it has usurped Drool Bumper as the best video I've made, though admittedly I didn't use Blender at all, so it was more Da Vinci Resolve practice if anything.
+                        <br><br>All this work on animations also has me craving to change the animations page. My idea is that instead of just videos there can be 3 types of content. The first will be the standalone animations, the second will be groups of them that will automatically cycle through, kind of like the current Tele mode but filtered to specifically SJM animations, or meta animations, or bumpers, etc. The third will be a mix of all of those, so you'd get cartoons with bumpers and breaks spliced between them.
+                        <br><br>This is a tall order, so I'm also not gonna touch it until the redesign. This whole site probably won't be touched until then, except for adding animations as I've been doing.
+                        <br><br>To whoever is reading this, thank you! I doubt you'll be reading this on the 8th of November 2026, but why write this if not for myself, right?
+                        <br><br>Cya hopefully 6 animations later unless my mind is drawn to something blog-worthy.`
+    }
 }
 
 var tagcolours = {
