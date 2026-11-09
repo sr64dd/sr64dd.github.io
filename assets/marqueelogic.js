@@ -26,7 +26,7 @@ function startMarquee() {
         "Don't go looking at the github repository! It'll ruin the magic!",
         "TEST TEST... ABDC., () xxx has Released! 0123ABDC., () xxx has Released! 0123... TEST OVER",
         "What's the derivative of 64/3 * d^3?",
-        "Guys, I have a confession... none of my renders were made in Bryce... I use UE5 for all of my works... please forgive me.",
+        "Guys, I have a confession... none of my renders were made in Bryce... I just use Blender for all of my works... please forgive me.",
         "Bag some goodies! Bag them! NOW!",
         "Listen to me carefully. You and only you can see this marquee. A very special item is located in Hilbert's Leisure Centre. Pool 64. Meet me there.",
         "3D Rendered marble vaporave knight to d64...",
@@ -71,7 +71,24 @@ function startMarquee() {
         "Extra! Extra! More stuff to read has landed on the site! And don't worry. It's not educational ;)",
         "If you were to describe something that is empty, would you use baron, barron, baren, or barren?",
         "Now Boarding flights 9 to Arecaceby, 15 to Aerostruct.",
-        "Why not have a drink?"
+        "Why not have a drink?",
+        "If you say two monologues one after the other, are they really two monologues?",
+        "Projected to be 100 subpages on this site by 2090.",
+        "Trust me, reading this marquee is better for your soul than whatever else you were doing.",
+        "That's ______, every _______, because it's not about _______; it's _______, and honestly? That's ________!",
+        "Sorry if this marquee has been referencing irritating real world phenomena.",
+        "And now, watch as I slow down time to a crawl!",
+        "\"Entity at 3:00, but don't make it too obvious\" (o-o) --> (}",
+        "You have  2  new messages. [1] Read First, [2] Read All, [3] Delete All, [4] Delete ALL.",
+        "Dude that's so retro dude! It's like that SNEEZE or whatever nintendo made!",
+        "Show your caps lock key a bit of love, huh?",
+        "Why are they 88x31?",
+        "Feel like you've been here before? Erm, no?",
+        "Move forward!",
+        "Why not take a break? You can pause the game by pressing (+).",
+        "If I'm looking at something, and that something has... depth... I think that thing is pretty cool!",
+        "Will it work? You tell me genius.",
+        "I definitely should have done something far more productive than writing this."
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {
