@@ -169,7 +169,9 @@ let musicPlaylists = {
         "xFV339D9SsY",
         "0bPU4bdMlqM",
         "h6YlKqYp3xI",
-        "n6daacTPEE0"
+        "n6daacTPEE0",
+        "MCwzQY9z5fU",
+        "a3kodS1KmZg"
     ],
     "intense" : [
         "qffVd9KmGZo",
@@ -208,7 +210,9 @@ let musicPlaylists = {
         "3pLdV2O6yiI",
         "9NPv_ZsMgIg",
         "440OMdo9MN8",
-        "-fgv66f6GK8"
+        "-fgv66f6GK8",
+        "hhKHv1F_1xY",
+        "fM6Vi3fP-vs"
     ],
     "all" : [
         "qB1ucmJSgRE",
