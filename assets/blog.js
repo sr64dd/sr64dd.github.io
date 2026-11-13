@@ -203,6 +203,19 @@ var blogPosts = {
                         <br><br>This is a tall order, so I'm also not gonna touch it until the redesign. This whole site probably won't be touched until then, except for adding animations as I've been doing.
                         <br><br>To whoever is reading this, thank you! I doubt you'll be reading this on the 8th of November 2026, but why write this if not for myself, right?
                         <br><br>Cya hopefully 6 animations later unless my mind is drawn to something blog-worthy.`
+    },
+    10 : {
+        "title" : "10. Planning something drastic.",
+        "date" : "13/11/26",
+        "category" : "This Site",
+        "body" : `So much for "cya hopefully 6 animations later unless my mind is drawn to something blog-worthy."
+                        <br><br>I'll keep this short. I just finished making the fifth animation, Sugar Bumper, which is admittedly pretty simplistic but still, that makes five. My original goal was to start making more 3DS themes and Bryce presets after five, but there's been a change of plans.
+                        <br><br>I'm going to begin the redesign and port to eleventy. I realise this is a pretty huge process but I've justified it like this;
+                        <br><br>The holidays are coming very soon and I'll have a lot more time to do stuff. This means I can commit to longer animations, or I can spend more time adding stuff to the site. I really only want to be doing the former during this time.
+                        <br><br>Additionally, I need a good hour or two to start an animation properly. If I give myself ten minutes it goes nowhere, whereas I can contribute more to the website in a shorter amount of time.
+                        <br><br>Plus, the time until the holidays may very well be enough to finish the redesign. And I've been holding off a lot of updates to pages, specifically the Gallery, Animations, and Character Bios page until the redesign is done, so if I get started now I can clear my bucketlist by the holidays.
+                        <br><br>I don't know why I'm trying to justify this to you as if you can in any way influence me to postpone it.
+                        <br><br><n style="color: aqua;">Just know that this tally marks a pivotal moment in this site's history!</n>`
     }
 }
 
