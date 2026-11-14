@@ -216,6 +216,22 @@ var blogPosts = {
                         <br><br>Plus, the time until the holidays may very well be enough to finish the redesign. And I've been holding off a lot of updates to pages, specifically the Gallery, Animations, and Character Bios page until the redesign is done, so if I get started now I can clear my bucketlist by the holidays.
                         <br><br>I don't know why I'm trying to justify this to you as if you can in any way influence me to postpone it.
                         <br><br><n style="color: aqua;">Just know that this tally marks a pivotal moment in this site's history!</n>`
+    },
+    11 : {
+        "title" : "11. Citsard gnihtemos gninnalp...",
+        "date" : "14/11/26",
+        "category" : "This Site",
+        "body" : `You know there can't be good news when the tallies are less than a day apart.
+                        <br><br>The different website idea... it's not happening. The main reasons for this are laziness, redundancy, personality crisis, take your pick.
+                        <br><br>The main reason for the redesign was to compensate for the current site's rather lackluster look, but a secondary reason was so the site would be compatible on smaller screens.
+                        <br><br>But <i>they can just resize the page...</i>
+                        <br><br>I know sideloading the problem to the user isn't very user friendly of me, but either I make an entire new website layout and dozens of assets... or they can press two keys.
+                        <br><br>I also don't really want two completely different looking sites associated with the same content. And of course, redoing the entire site would be really boring, even if it's just one page.
+                        <br><br>But this cancellation does come with a few implications. For one, the Animations page is probably what I'll be working on next. Except for the CTC page and the directory pages that just link to other stuff, I'm going to make the pages of this site a lot more detailed and interesting. They may be jarring next to each other, but hey. No one's perfect, right?
+                        <br><br>Additionally since this ends the web redesign fiasco I solemnly swear to never mention it in a blog again.
+                        <br><br>For some good news, me not worrying about a whole page redesign allows me to instead make the site Christmas themed! Yippee!
+                        <br><br>Thank you for tolerating these last few posts. The future looks bright!
+                        <br><br><n style="color: aqua;">Just know that this tally marks a pivotal moment in this site's history!</n>`
     }
 }
 

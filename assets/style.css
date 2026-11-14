@@ -179,6 +179,16 @@ a {
     background-image: url(icons/guestbookclicked.webp);
 }
 
+.phone {
+    background-image: url(icons/phone.webp);
+    width: 48px;
+    height: 48px;
+}
+
+.phone:active {
+    background-image: url(icons/phoneclicked.webp);
+}
+
 /* Right side */
 
 .rightside {

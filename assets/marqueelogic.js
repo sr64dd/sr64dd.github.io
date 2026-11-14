@@ -88,7 +88,8 @@ function startMarquee() {
         "Why not take a break? You can pause the game by pressing (+).",
         "If I'm looking at something, and that something has... depth... I think that thing is pretty cool!",
         "Will it work? You tell me genius.",
-        "I definitely should have done something far more productive than writing this."
+        "I definitely should have done something far more productive than writing this.",
+        "Need help cleaning your car? Hit up my new biz at 3472 635 639 and we'll sort ya out!"
     ];
     let randomString = messages[Math.floor(Math.random() * messages.length)];
     if (isFirstTime) {

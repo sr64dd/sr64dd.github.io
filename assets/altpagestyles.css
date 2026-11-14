@@ -174,7 +174,8 @@
 /* Character Bios */
 .contentaero {
     border-image: url(backgrounds/border3aero.webp) 16;
-    background-image: url(backgrounds/bodybgaero.webp);
+    background-image: none;
+    background-color: black;
 }
 
 .marqaero {
@@ -182,6 +183,20 @@
     background-image: url(backgrounds/marqueeaero.webp);
     color: rgb(255, 255, 255);
     text-shadow: 0px 0px 8px #ff0202;
+}
+
+/* Phone */
+.contentphone {
+    border-image: url(backgrounds/border3phone.webp) 16;
+    background-image: url(backgrounds/bgphone.webp);
+    background-color: black;
+}
+
+.marqphone {
+    border-image: url(backgrounds/border4phone.webp) 16;
+    background-image: url(backgrounds/marqueephone.webp);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px #496ebe;
 }
 
 /* --= Hyperlink Styles =-- */
